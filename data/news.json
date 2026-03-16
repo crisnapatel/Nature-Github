@@ -1,4 +1,8 @@
 {
+  "categories": {
+    "tech_science": [],
+    "world": []
+  },
   "runs": [
     {
       "id": "2026-03-16-live",
@@ -15,11 +19,16 @@
       },
       "articles": [
         {
+          "displayTitle": "ML potentials now predict solid-electrolyte conductivity at screening scale",
           "title": "Accelerating solid-state battery design: predicting ionic conductivity with machine learning potentials",
           "journal": "Journal of Materials Chemistry A",
           "quartile": "Q1",
           "publishedAt": "2025-12-06",
           "summary": "Builds an MLP for the Li-P-S-Ge-Sn space and validates against DFT energies and forces; large-scale MD predicts room-temperature ionic conductivity with strong experimental correlation (R2 reported as 0.93), useful for rapid SSE screening workflows.",
+          "conclusions": [
+            "A single MLP can reproduce DFT-level energetics for broad sulfide chemistry while remaining stable for long MD trajectories.",
+            "Predicted conductivity trends are sufficiently aligned with measurements to use as an early-stage candidate filter before expensive full workflows."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d5ta07245j",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TA07245J&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
@@ -27,11 +36,16 @@
           }
         },
         {
+          "displayTitle": "MOF topology dominates hydrogen-storage ranking in large virtual libraries",
           "title": "Computational investigation of the impact of metal-organic framework topology on hydrogen storage capacity",
           "journal": "Molecular Systems Design and Engineering",
           "quartile": "Q1",
           "publishedAt": "2025-07-15",
           "summary": "Screens 105230 topology-derived MOFs and combines GCMC data with ML ranking to identify high-performing nets for volumetric and gravimetric storage trade-offs, directly relevant to high-throughput adsorption screening pipelines.",
+          "conclusions": [
+            "Network topology itself explains a major part of adsorption-performance variance, even before detailed chemistry tuning.",
+            "Hybrid GCMC plus ML workflows can reduce search space aggressively while retaining high-performing candidates."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2025/me/d5me00078e",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5ME00078E&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
@@ -39,11 +53,16 @@
           }
         },
         {
+          "displayTitle": "ML plus GA pipeline identifies lightweight BCC hydride alloys",
           "title": "Design of lightweight BCC multi-principal element alloys with enhanced hydrogen storage using a machine learning-driven genetic algorithm",
           "journal": "Journal of Materials Chemistry A",
           "quartile": "Q1",
           "publishedAt": "2025-10-23",
           "summary": "Integrates ML surrogate models, GA search, DFT analysis, and temperature-dependent MD to discover BCC MPEA hydrides with improved gravimetric capacity, a practical template for multi-objective composition optimization.",
+          "conclusions": [
+            "Coupling surrogate inference with physics-based validation improves discovery efficiency for multicomponent alloy spaces.",
+            "Selected BCC compositions balance storage gain with acceptable thermodynamic and temperature-dependent behavior."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2025/ta/d5ta06903c",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TA06903C&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
@@ -51,11 +70,16 @@
           }
         },
         {
+          "displayTitle": "MLP transport modeling resolves thermal anisotropy in selenium polymorphs",
           "title": "Thermal conductivity of selenium crystals based on machine learning potentials",
           "journal": "Physical Chemistry Chemical Physics",
           "quartile": "Q2",
           "publishedAt": "2025-08-21",
           "summary": "Uses ab initio-trained MLPs to study thermal transport in trigonal versus monoclinic selenium, linking structure-specific phonon behavior to transport and thermoelectric implications.",
+          "conclusions": [
+            "Crystal phase and bonding anisotropy produce distinct thermal-conductivity signatures that can be captured with trained MLP dynamics.",
+            "MLP-based transport studies are practical for phase-comparative screening where direct ab initio dynamics are too costly."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlehtml/2025/cp/d5cp02310f",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5CP02310F&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
@@ -63,11 +87,16 @@
           }
         },
         {
+          "displayTitle": "Dual-atom catalyst candidates for NRR screened via DFT-to-ML transfer",
           "title": "Computational screening of M2N4-C-type dual-atom-catalysts for electrochemical ammonia synthesis by the first-principles DFT and machine learning",
           "journal": "Nanoscale",
           "quartile": "Q1",
           "publishedAt": "2025-09-29",
           "summary": "Evaluates DAC families with DFT and trains a transferable descriptor for NRR activity and pathway preference, demonstrating an efficient active-learning style route for catalyst down-selection.",
+          "conclusions": [
+            "Descriptor-guided ML ranking reproduces DFT trends for key reaction intermediates across DAC motifs.",
+            "A reduced candidate shortlist can preserve promising NRR pathways while cutting expensive first-principles workload."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2025/nr/d5nr03036f",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5NR03036F&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
@@ -75,11 +104,16 @@
           }
         },
         {
+          "displayTitle": "DFT pathway map clarifies beta-Ga2O3 ALD growth chemistry",
           "title": "DFT mechanistic insights into the atomic layer deposition of beta-Ga2O3",
           "journal": "RSC Advances",
           "quartile": "Q2",
           "publishedAt": "2025-10-13",
           "summary": "Maps ALD reaction pathways on beta-Ga2O3 using DFT energetics and transition states, giving process-level mechanistic guidance for precursor selection and growth-window tuning.",
+          "conclusions": [
+            "Computed barrier hierarchy identifies the kinetically dominant reaction steps in the ALD cycle.",
+            "Precursor choice and pulse conditions can be tuned rationally from the mechanism instead of empirical trial-and-error."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra05380c",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5RA05380C&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
@@ -87,11 +121,16 @@
           }
         },
         {
+          "displayTitle": "Cross-scale graphene modeling stack is now clearly consolidated",
           "title": "Multiscale modeling of graphene and carbon nanostructures: advances in atomistic, coarse-grained, and machine learning approaches",
           "journal": "RSC Advances",
           "quartile": "Q2",
           "publishedAt": "2026-02-20",
           "summary": "A review that consolidates atomistic MD, coarse-grained, and ML-assisted frameworks for graphene-derived systems, useful as a method map for scale-bridging model development and force-field strategy.",
+          "conclusions": [
+            "Recent workflows show that atomistic and coarse-grained layers can be connected without fully sacrificing key structure-property trends.",
+            "ML-assisted components are most impactful when used to accelerate bottleneck steps inside multiscale loops."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2026/ra/d5ra09422d",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5RA09422D&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
@@ -99,11 +138,16 @@
           }
         },
         {
+          "displayTitle": "Synthesis-plus-DFT workflow validates a lead-free double perovskite route",
           "title": "Hydrothermal synthesis and comprehensive DFT evaluation of Ba2PrMnO6 double perovskite nanocrystals for next-generation spintronic and optoelectronic technologies",
           "journal": "Journal of Materials Chemistry C",
           "quartile": "Q1",
           "publishedAt": "2026-02-05",
           "summary": "Combines synthesis with DFT-based electronic, optical, and mechanical analysis of a lead-free double perovskite; relevant as an experiment-computation coupling case for functional oxide screening.",
+          "conclusions": [
+            "Experimental synthesis confirms that the targeted phase is accessible under practical processing conditions.",
+            "DFT descriptors align with measured behavior sufficiently to support computational pre-screening of related oxide chemistries."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2026/tc/d5tc04258e",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TC04258E&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
@@ -111,11 +155,16 @@
           }
         },
         {
+          "displayTitle": "Janus monolayers show viable Ca-ion anode behavior in DFT/AIMD tests",
           "title": "Unveiling the anodic potential of Janus MNS (M = Sc, Ti; N = Se, Te) monolayers for calcium-ion batteries: insights from DFT and AIMD studies",
           "journal": "Nanoscale Advances",
           "quartile": "Q2",
           "publishedAt": "2026-01-19",
           "summary": "Uses DFT plus AIMD to quantify adsorption energetics, diffusion barriers, and voltage windows in Janus TMD anodes for Ca-ion storage, providing directly actionable descriptors for battery-anode screening.",
+          "conclusions": [
+            "A subset of Janus monolayers satisfies simultaneous stability and migration criteria for Ca transport.",
+            "AIMD stability checks reinforce that descriptor-level rankings are not purely static-DFT artifacts."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2026/na/d5na00694e",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5NA00694E&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
@@ -123,11 +172,16 @@
           }
         },
         {
+          "displayTitle": "Alloyed AuPdCu nanoflowers gain EOR activity via electronic tuning",
           "title": "Fine-tuning and electronic modulation of AuPdCu nanoflowers assembled with nanowires for robust ethanol oxidation reaction performance",
           "journal": "Nanoscale",
           "quartile": "Q1",
           "publishedAt": "2025-12-15",
           "summary": "Couples alloy design, catalytic testing, and DFT mechanistic analysis to tune intermediate binding and improve EOR activity, relevant for computationally guided catalyst composition optimization.",
+          "conclusions": [
+            "Composition-controlled electronic restructuring shifts adsorption energetics in directions favorable for EOR kinetics.",
+            "DFT interpretation is consistent with observed catalytic improvements, supporting model-guided composition tuning."
+          ],
           "link": "https://pubs.rsc.org/en/content/articlelanding/2026/nr/d5nr04040j",
           "image": {
             "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5NR04040J&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",

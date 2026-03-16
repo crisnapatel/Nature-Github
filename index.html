@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research News Digest</title>
+    <title>Discover · Research News</title>
     <meta
       name="description"
-      content="A curated archive of computational materials science research news."
+      content="Discover feed for materials research, tech and science, and world updates."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,63 +17,42 @@
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body data-view="home">
-    <div class="page-shell">
-      <header class="hero">
-        <p class="eyebrow">Computational Materials Science Monitor</p>
-        <h1>Research News Digest</h1>
-        <p class="hero-copy">
-          Twice-daily curation of technically relevant papers across atomistic
-          simulation, machine-learned interatomic potentials, DFT, and
-          experimentally grounded materials studies.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-solid" href="#latest">Latest digest</a>
-          <a class="button button-ghost" href="archive/">Browse archive</a>
+    <div class="discover-shell">
+      <header class="discover-header">
+        <p class="discover-title">Discover</p>
+        <div class="discover-actions">
+          <a class="icon-btn" href="archive/" aria-label="Open archive">Archive</a>
+          <a class="icon-btn" href="runs/2026-03-16-live/" aria-label="Open latest run">Latest</a>
         </div>
       </header>
 
       <main>
-        <section class="panel summary-grid">
-          <div>
-            <p class="panel-label">Coverage</p>
-            <p class="metric" id="total-runs">0</p>
-            <p class="metric-copy">archived digest runs</p>
+        <section class="quick-stats" id="quick-stats">
+          <div class="stat-card">
+            <p class="stat-label">Latest run</p>
+            <p class="stat-value" id="latest-run-date">-</p>
           </div>
-          <div>
-            <p class="panel-label">Current cadence</p>
-            <p class="metric">06:00 / 16:00 IST</p>
-            <p class="metric-copy">daily publication scans</p>
+          <div class="stat-card">
+            <p class="stat-label">Coverage</p>
+            <p class="stat-value">Q1/Q2/Q3 journals</p>
           </div>
-          <div>
-            <p class="panel-label">Selection</p>
-            <p class="metric">Top 10</p>
-            <p class="metric-copy">high-relevance papers per run</p>
+          <div class="stat-card">
+            <p class="stat-label">Cards</p>
+            <p class="stat-value" id="card-count">0</p>
           </div>
         </section>
 
-        <section class="section-heading" id="latest">
-          <div>
-            <p class="eyebrow">Latest Run</p>
-            <h2 id="latest-title">Loading digest</h2>
-          </div>
-          <a class="text-link" id="latest-link" href="archive/">View archive</a>
+        <section class="feed-tabs" id="feed-tabs" aria-label="News categories">
+          <button class="feed-tab is-active" data-tab="for_you" type="button">For You</button>
+          <button class="feed-tab" data-tab="materials" type="button">Materials</button>
+          <button class="feed-tab" data-tab="tech_science" type="button">Tech &amp; Science</button>
+          <button class="feed-tab" data-tab="world" type="button">World</button>
         </section>
 
-        <section class="panel">
-          <div class="run-highlight" id="latest-run"></div>
-        </section>
-
-        <section class="section-heading">
-          <div>
-            <p class="eyebrow">Top Picks</p>
-            <h2>Current article set</h2>
-          </div>
-        </section>
-
-        <section class="cards-grid" id="latest-articles"></section>
+        <section class="cards-stream" id="cards-stream"></section>
       </main>
     </div>
 
     <script src="assets/app.js" defer></script>
   </body>
-  </html>
+</html>
