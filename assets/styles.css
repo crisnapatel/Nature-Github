@@ -365,7 +365,7 @@ main {
 
 .discover-title {
   margin: 0;
-  color: #f3f6fb;
+  color: #2a1f18;
   font-size: clamp(1.5rem, 6vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -383,9 +383,9 @@ main {
   min-height: 2.2rem;
   padding: 0 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(20, 28, 37, 0.9);
-  color: #d7dfeb;
+  border: 1px solid rgba(74, 58, 45, 0.15);
+  background: rgba(255, 251, 244, 0.9);
+  color: #6a4f3d;
   text-decoration: none;
   font-weight: 700;
   font-size: 0.82rem;
@@ -400,15 +400,15 @@ main {
 
 .stat-card {
   border-radius: 16px;
-  border: 1px solid rgba(113, 138, 167, 0.25);
+  border: 1px solid rgba(74, 58, 45, 0.14);
   padding: 0.7rem 0.8rem;
-  background: rgba(15, 20, 28, 0.93);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 252, 246, 0.9);
+  box-shadow: 0 12px 28px rgba(60, 38, 21, 0.12);
 }
 
 .stat-label {
   margin: 0;
-  color: #7ba0c9;
+  color: #9d6e53;
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -416,7 +416,7 @@ main {
 
 .stat-value {
   margin: 0.28rem 0 0;
-  color: #f0f3f8;
+  color: #2f231c;
   font-size: 0.92rem;
   font-weight: 600;
 }
@@ -441,15 +441,15 @@ main {
   font-family: inherit;
   font-size: 0.98rem;
   font-weight: 600;
-  color: #9ca8b9;
-  background: rgba(80, 98, 120, 0.28);
+  color: #7a6a5f;
+  background: rgba(170, 138, 108, 0.2);
   cursor: pointer;
   white-space: nowrap;
 }
 
 .feed-tab.is-active {
-  color: #35c5e8;
-  background: rgba(53, 197, 232, 0.16);
+  color: #b65c33;
+  background: rgba(182, 92, 51, 0.14);
 }
 
 .cards-stream {
@@ -461,9 +461,9 @@ main {
 .empty-card {
   overflow: hidden;
   border-radius: 22px;
-  border: 1px solid rgba(116, 133, 154, 0.3);
-  background: #0f141c;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(74, 58, 45, 0.16);
+  background: #fffaf2;
+  box-shadow: 0 18px 40px rgba(60, 38, 21, 0.16);
 }
 
 .news-image-wrap {
@@ -489,9 +489,9 @@ main {
 }
 
 .news-meta span {
-  color: #8ba0b8;
-  background: rgba(106, 130, 157, 0.16);
-  border: 1px solid rgba(116, 133, 154, 0.2);
+  color: #7b604d;
+  background: rgba(166, 130, 98, 0.12);
+  border: 1px solid rgba(120, 92, 69, 0.16);
   border-radius: 999px;
   padding: 0.2rem 0.55rem;
   font-size: 0.75rem;
@@ -499,7 +499,7 @@ main {
 
 .news-main h2 {
   margin: 0;
-  color: #edf3fb;
+  color: #2b1e17;
   font-size: clamp(1.15rem, 3.8vw, 1.7rem);
   line-height: 1.24;
   letter-spacing: -0.01em;
@@ -510,8 +510,8 @@ main {
   border: 0;
   border-radius: 999px;
   padding: 0.52rem 0.84rem;
-  background: rgba(53, 197, 232, 0.13);
-  color: #35c5e8;
+  background: rgba(182, 92, 51, 0.12);
+  color: #b65c33;
   font-family: inherit;
   font-size: 0.82rem;
   font-weight: 700;
@@ -520,7 +520,7 @@ main {
 
 .news-details {
   margin-top: 0.9rem;
-  border-top: 1px solid rgba(116, 133, 154, 0.22);
+  border-top: 1px solid rgba(74, 58, 45, 0.16);
   padding-top: 0.85rem;
 }
 
@@ -529,12 +529,12 @@ main {
   font-size: 0.86rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #7ba0c9;
+  color: #8d6045;
 }
 
 .news-details p {
   margin: 0 0 0.75rem;
-  color: #d4deec;
+  color: #4d3d31;
   line-height: 1.6;
   font-size: 0.96rem;
 }
@@ -542,7 +542,7 @@ main {
 .card-conclusions {
   margin: 0.1rem 0 0.85rem 1rem;
   padding: 0;
-  color: #d4deec;
+  color: #4d3d31;
   line-height: 1.56;
 }
 
@@ -551,15 +551,15 @@ main {
 }
 
 .card-empty {
-  color: #a7b3c6;
+  color: #7d6a5b;
 }
 
 .paper-title {
-  color: #b8c3d4;
+  color: #6d594a;
 }
 
 .paper-link {
-  color: #35c5e8;
+  color: #b65c33;
   font-weight: 700;
   text-decoration: none;
 }
@@ -570,19 +570,19 @@ main {
 
 .empty-card h2 {
   margin: 0;
-  color: #edf3fb;
+  color: #2b1e17;
 }
 
 .empty-card p {
-  color: #c6d4e7;
+  color: #5a4a3f;
   line-height: 1.6;
 }
 
 body[data-view="home"] {
   background:
-    radial-gradient(circle at 100% 0%, rgba(53, 197, 232, 0.15), transparent 24%),
-    radial-gradient(circle at 0% 20%, rgba(52, 97, 188, 0.2), transparent 28%),
-    linear-gradient(180deg, #12161d, #090d12 56%, #070a10);
+    radial-gradient(circle at top left, rgba(162, 77, 45, 0.15), transparent 32%),
+    radial-gradient(circle at 85% 10%, rgba(94, 122, 98, 0.18), transparent 24%),
+    linear-gradient(180deg, var(--bg), var(--bg-alt));
 }
 
 @media (min-width: 900px) {
