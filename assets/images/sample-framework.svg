@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Porous materials placeholder illustration</title>
+  <desc id="desc">Abstract lattice, layered sheets, and diffusion paths representing computational materials science research.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#221712" />
+      <stop offset="55%" stop-color="#513123" />
+      <stop offset="100%" stop-color="#c46c45" />
+    </linearGradient>
+    <linearGradient id="node" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6cf9f" />
+      <stop offset="100%" stop-color="#f08d62" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <g opacity="0.2" stroke="#f8e9d7" stroke-width="2">
+    <path d="M70 720C230 580 390 560 560 610s250 44 430-70 170-190 170-190" fill="none" />
+    <path d="M10 540c170-70 300-90 470-40s310 34 510-90" fill="none" />
+  </g>
+  <g transform="translate(150 130)">
+    <g stroke="#ffd7b5" stroke-width="5" opacity="0.75">
+      <path d="M0 120 105 60l105 60v120L105 300 0 240Z" fill="none" />
+      <path d="M210 120 315 60l105 60v120L315 300 210 240Z" fill="none" />
+      <path d="M420 120 525 60l105 60v120L525 300 420 240Z" fill="none" />
+      <path d="M105 300 210 240l105 60v120L210 480 105 420Z" fill="none" />
+      <path d="M315 300 420 240l105 60v120L420 480 315 420Z" fill="none" />
+    </g>
+    <g fill="url(#node)">
+      <circle cx="0" cy="120" r="14" />
+      <circle cx="105" cy="60" r="14" />
+      <circle cx="210" cy="120" r="14" />
+      <circle cx="105" cy="300" r="14" />
+      <circle cx="210" cy="240" r="14" />
+      <circle cx="315" cy="60" r="14" />
+      <circle cx="420" cy="120" r="14" />
+      <circle cx="315" cy="300" r="14" />
+      <circle cx="525" cy="60" r="14" />
+      <circle cx="630" cy="120" r="14" />
+      <circle cx="525" cy="300" r="14" />
+      <circle cx="420" cy="480" r="14" />
+      <circle cx="210" cy="480" r="14" />
+    </g>
+  </g>
+  <g transform="translate(780 120)">
+    <g fill="#f7ecdc" opacity="0.16">
+      <rect x="0" y="40" width="260" height="18" rx="9" />
+      <rect x="30" y="95" width="260" height="18" rx="9" />
+      <rect x="0" y="150" width="260" height="18" rx="9" />
+      <rect x="30" y="205" width="260" height="18" rx="9" />
+      <rect x="0" y="260" width="260" height="18" rx="9" />
+    </g>
+    <g fill="#ffd3b2">
+      <circle cx="44" cy="49" r="12" />
+      <circle cx="212" cy="104" r="12" />
+      <circle cx="136" cy="159" r="12" />
+      <circle cx="84" cy="214" r="12" />
+      <circle cx="228" cy="269" r="12" />
+    </g>
+    <g stroke="#fff1df" stroke-width="5" stroke-linecap="round">
+      <path d="M44 49c28 42 76 39 108 53 44 19 58 59 60 111" fill="none" />
+      <path d="M212 104c-35 15-61 33-76 55-15 21-18 49-52 55" fill="none" />
+      <path d="M136 159c32 30 53 59 92 110" fill="none" />
+    </g>
+  </g>
+</svg>

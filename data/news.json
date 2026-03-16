@@ -1,0 +1,92 @@
+{
+  "runs": [
+    {
+      "id": "2026-03-16-am",
+      "title": "Morning Digest: Atomistic and Experimental Signals Worth Tracking",
+      "date": "2026-03-16",
+      "slot": "Morning run · 06:00 IST",
+      "articleCount": 10,
+      "summary": "Initial scaffold entry showing how the automation can preserve each run as a dated digest while highlighting simulation-relevant materials papers and experimentally useful validation studies.",
+      "page": "runs/2026-03-16-am/",
+      "tags": ["MD", "DFT", "ML Potentials", "Adsorption", "Interfaces"],
+      "heroImage": {
+        "src": "assets/images/sample-framework.svg",
+        "alt": "Stylized porous lattice with adsorption paths and layered materials motifs."
+      },
+      "articles": [
+        {
+          "title": "Machine-Learned Potential Benchmarking for Porous Framework Relaxation",
+          "journal": "Placeholder Journal of Materials Modeling",
+          "quartile": "Q1",
+          "publishedAt": "2026-03-15",
+          "summary": "Template entry for a concise expert summary focused on methodology, transferable potential quality, and whether the reported observables are usable for validation or follow-up simulation.",
+          "link": "https://example.com/article-1",
+          "image": {
+            "src": "assets/images/sample-framework.svg",
+            "alt": "Stylized porous lattice used as a placeholder research graphic."
+          }
+        },
+        {
+          "title": "Defect-Mediated Transport in Layered Energy Materials",
+          "journal": "Placeholder Computational Materials Letters",
+          "quartile": "Q2",
+          "publishedAt": "2026-03-15",
+          "summary": "Template entry showing where a run-specific summary can discuss diffusion pathways, defect energetics, and whether the data informs force-field development or DFT follow-up.",
+          "link": "https://example.com/article-2",
+          "image": {
+            "src": "assets/images/sample-framework.svg",
+            "alt": "Stylized layered material used as a placeholder research graphic."
+          }
+        },
+        {
+          "title": "Operando Measurements with Direct Relevance to Atomistic Validation",
+          "journal": "Placeholder Journal of Functional Materials",
+          "quartile": "Q2",
+          "publishedAt": "2026-03-14",
+          "summary": "Template entry showing how experimentally grounded papers can be included when they constrain adsorption energies, microstructure assumptions, or model parameter ranges.",
+          "link": "https://example.com/article-3",
+          "image": {
+            "src": "assets/images/sample-framework.svg",
+            "alt": "Stylized microscopy and simulation motif used as a placeholder research graphic."
+          }
+        },
+        {
+          "title": "Phase Stability and Interface Reconstruction in Nanostructured Solids",
+          "journal": "Placeholder Advanced Materials Archive",
+          "quartile": "Q1",
+          "publishedAt": "2026-03-14",
+          "summary": "Template entry for discussing interface energetics, finite-temperature reconstruction, and whether the conclusions suggest a worthwhile MD or ab initio test case.",
+          "link": "https://example.com/article-4",
+          "image": {
+            "src": "assets/images/sample-framework.svg",
+            "alt": "Stylized interface reconstruction image used as a placeholder research graphic."
+          }
+        },
+        {
+          "title": "Carbon Nanostructures Revisited Through Multi-Scale Simulation",
+          "journal": "Placeholder Materials Physics Reports",
+          "quartile": "Q3",
+          "publishedAt": "2026-03-13",
+          "summary": "Template entry preserving room for carbon-focused papers without constraining the feed exclusively to hydrogen storage or a narrow allotrope set.",
+          "link": "https://example.com/article-5",
+          "image": {
+            "src": "assets/images/sample-framework.svg",
+            "alt": "Stylized carbon network used as a placeholder research graphic."
+          }
+        },
+        {
+          "title": "Adsorption Free-Energy Landscapes in Confining Geometries",
+          "journal": "Placeholder Surface Science Review",
+          "quartile": "Q1",
+          "publishedAt": "2026-03-13",
+          "summary": "Template entry for noting when free-energy surfaces, host-guest interactions, and pore topology trends can inform mechanistic modeling.",
+          "link": "https://example.com/article-6",
+          "image": {
+            "src": "assets/images/sample-framework.svg",
+            "alt": "Stylized adsorption landscape used as a placeholder research graphic."
+          }
+        }
+      ]
+    }
+  ]
+}
