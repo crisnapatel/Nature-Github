@@ -1,89 +1,137 @@
 {
   "runs": [
     {
-      "id": "2026-03-16-am",
-      "title": "Morning Digest: Atomistic and Experimental Signals Worth Tracking",
+      "id": "2026-03-16-live",
+      "title": "Live Digest: Computational Materials (Top 10)",
       "date": "2026-03-16",
-      "slot": "Morning run · 06:00 IST",
+      "slot": "Manual run · 16 Mar 2026",
       "articleCount": 10,
-      "summary": "Initial scaffold entry showing how the automation can preserve each run as a dated digest while highlighting simulation-relevant materials papers and experimentally useful validation studies.",
-      "page": "runs/2026-03-16-am/",
-      "tags": ["MD", "DFT", "ML Potentials", "Adsorption", "Interfaces"],
+      "summary": "Fresh pull of ten recent materials papers with strong computational content across MD, DFT, machine-learned potentials, catalysis, battery materials, and simulation-informed experiments.",
+      "page": "runs/2026-03-16-live/",
+      "tags": ["ML Potentials", "DFT", "Battery Materials", "Catalysis", "Carbon"],
       "heroImage": {
-        "src": "assets/images/sample-framework.svg",
-        "alt": "Stylized porous lattice with adsorption paths and layered materials motifs."
+        "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TA07245J&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+        "alt": "Graphical abstract for machine learning potential based ionic conductivity prediction in solid-state electrolytes."
       },
       "articles": [
         {
-          "title": "Machine-Learned Potential Benchmarking for Porous Framework Relaxation",
-          "journal": "Placeholder Journal of Materials Modeling",
+          "title": "Accelerating solid-state battery design: predicting ionic conductivity with machine learning potentials",
+          "journal": "Journal of Materials Chemistry A",
           "quartile": "Q1",
-          "publishedAt": "2026-03-15",
-          "summary": "Template entry for a concise expert summary focused on methodology, transferable potential quality, and whether the reported observables are usable for validation or follow-up simulation.",
-          "link": "https://example.com/article-1",
+          "publishedAt": "2025-12-06",
+          "summary": "Builds an MLP for the Li-P-S-Ge-Sn space and validates against DFT energies and forces; large-scale MD predicts room-temperature ionic conductivity with strong experimental correlation (R2 reported as 0.93), useful for rapid SSE screening workflows.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d5ta07245j",
           "image": {
-            "src": "assets/images/sample-framework.svg",
-            "alt": "Stylized porous lattice used as a placeholder research graphic."
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TA07245J&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5TA07245J."
           }
         },
         {
-          "title": "Defect-Mediated Transport in Layered Energy Materials",
-          "journal": "Placeholder Computational Materials Letters",
+          "title": "Computational investigation of the impact of metal-organic framework topology on hydrogen storage capacity",
+          "journal": "Molecular Systems Design and Engineering",
+          "quartile": "Q1",
+          "publishedAt": "2025-07-15",
+          "summary": "Screens 105230 topology-derived MOFs and combines GCMC data with ML ranking to identify high-performing nets for volumetric and gravimetric storage trade-offs, directly relevant to high-throughput adsorption screening pipelines.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2025/me/d5me00078e",
+          "image": {
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5ME00078E&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5ME00078E."
+          }
+        },
+        {
+          "title": "Design of lightweight BCC multi-principal element alloys with enhanced hydrogen storage using a machine learning-driven genetic algorithm",
+          "journal": "Journal of Materials Chemistry A",
+          "quartile": "Q1",
+          "publishedAt": "2025-10-23",
+          "summary": "Integrates ML surrogate models, GA search, DFT analysis, and temperature-dependent MD to discover BCC MPEA hydrides with improved gravimetric capacity, a practical template for multi-objective composition optimization.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2025/ta/d5ta06903c",
+          "image": {
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TA06903C&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5TA06903C."
+          }
+        },
+        {
+          "title": "Thermal conductivity of selenium crystals based on machine learning potentials",
+          "journal": "Physical Chemistry Chemical Physics",
           "quartile": "Q2",
-          "publishedAt": "2026-03-15",
-          "summary": "Template entry showing where a run-specific summary can discuss diffusion pathways, defect energetics, and whether the data informs force-field development or DFT follow-up.",
-          "link": "https://example.com/article-2",
+          "publishedAt": "2025-08-21",
+          "summary": "Uses ab initio-trained MLPs to study thermal transport in trigonal versus monoclinic selenium, linking structure-specific phonon behavior to transport and thermoelectric implications.",
+          "link": "https://pubs.rsc.org/en/content/articlehtml/2025/cp/d5cp02310f",
           "image": {
-            "src": "assets/images/sample-framework.svg",
-            "alt": "Stylized layered material used as a placeholder research graphic."
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5CP02310F&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5CP02310F."
           }
         },
         {
-          "title": "Operando Measurements with Direct Relevance to Atomistic Validation",
-          "journal": "Placeholder Journal of Functional Materials",
+          "title": "Computational screening of M2N4-C-type dual-atom-catalysts for electrochemical ammonia synthesis by the first-principles DFT and machine learning",
+          "journal": "Nanoscale",
+          "quartile": "Q1",
+          "publishedAt": "2025-09-29",
+          "summary": "Evaluates DAC families with DFT and trains a transferable descriptor for NRR activity and pathway preference, demonstrating an efficient active-learning style route for catalyst down-selection.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2025/nr/d5nr03036f",
+          "image": {
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5NR03036F&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5NR03036F."
+          }
+        },
+        {
+          "title": "DFT mechanistic insights into the atomic layer deposition of beta-Ga2O3",
+          "journal": "RSC Advances",
           "quartile": "Q2",
-          "publishedAt": "2026-03-14",
-          "summary": "Template entry showing how experimentally grounded papers can be included when they constrain adsorption energies, microstructure assumptions, or model parameter ranges.",
-          "link": "https://example.com/article-3",
+          "publishedAt": "2025-10-13",
+          "summary": "Maps ALD reaction pathways on beta-Ga2O3 using DFT energetics and transition states, giving process-level mechanistic guidance for precursor selection and growth-window tuning.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2025/ra/d5ra05380c",
           "image": {
-            "src": "assets/images/sample-framework.svg",
-            "alt": "Stylized microscopy and simulation motif used as a placeholder research graphic."
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5RA05380C&imageInfo.ImageIdentifier.Year=2025&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5RA05380C."
           }
         },
         {
-          "title": "Phase Stability and Interface Reconstruction in Nanostructured Solids",
-          "journal": "Placeholder Advanced Materials Archive",
+          "title": "Multiscale modeling of graphene and carbon nanostructures: advances in atomistic, coarse-grained, and machine learning approaches",
+          "journal": "RSC Advances",
+          "quartile": "Q2",
+          "publishedAt": "2026-02-20",
+          "summary": "A review that consolidates atomistic MD, coarse-grained, and ML-assisted frameworks for graphene-derived systems, useful as a method map for scale-bridging model development and force-field strategy.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/ra/d5ra09422d",
+          "image": {
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5RA09422D&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5RA09422D."
+          }
+        },
+        {
+          "title": "Hydrothermal synthesis and comprehensive DFT evaluation of Ba2PrMnO6 double perovskite nanocrystals for next-generation spintronic and optoelectronic technologies",
+          "journal": "Journal of Materials Chemistry C",
           "quartile": "Q1",
-          "publishedAt": "2026-03-14",
-          "summary": "Template entry for discussing interface energetics, finite-temperature reconstruction, and whether the conclusions suggest a worthwhile MD or ab initio test case.",
-          "link": "https://example.com/article-4",
+          "publishedAt": "2026-02-05",
+          "summary": "Combines synthesis with DFT-based electronic, optical, and mechanical analysis of a lead-free double perovskite; relevant as an experiment-computation coupling case for functional oxide screening.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/tc/d5tc04258e",
           "image": {
-            "src": "assets/images/sample-framework.svg",
-            "alt": "Stylized interface reconstruction image used as a placeholder research graphic."
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TC04258E&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5TC04258E."
           }
         },
         {
-          "title": "Carbon Nanostructures Revisited Through Multi-Scale Simulation",
-          "journal": "Placeholder Materials Physics Reports",
-          "quartile": "Q3",
-          "publishedAt": "2026-03-13",
-          "summary": "Template entry preserving room for carbon-focused papers without constraining the feed exclusively to hydrogen storage or a narrow allotrope set.",
-          "link": "https://example.com/article-5",
+          "title": "Unveiling the anodic potential of Janus MNS (M = Sc, Ti; N = Se, Te) monolayers for calcium-ion batteries: insights from DFT and AIMD studies",
+          "journal": "Nanoscale Advances",
+          "quartile": "Q2",
+          "publishedAt": "2026-01-19",
+          "summary": "Uses DFT plus AIMD to quantify adsorption energetics, diffusion barriers, and voltage windows in Janus TMD anodes for Ca-ion storage, providing directly actionable descriptors for battery-anode screening.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/na/d5na00694e",
           "image": {
-            "src": "assets/images/sample-framework.svg",
-            "alt": "Stylized carbon network used as a placeholder research graphic."
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5NA00694E&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5NA00694E."
           }
         },
         {
-          "title": "Adsorption Free-Energy Landscapes in Confining Geometries",
-          "journal": "Placeholder Surface Science Review",
+          "title": "Fine-tuning and electronic modulation of AuPdCu nanoflowers assembled with nanowires for robust ethanol oxidation reaction performance",
+          "journal": "Nanoscale",
           "quartile": "Q1",
-          "publishedAt": "2026-03-13",
-          "summary": "Template entry for noting when free-energy surfaces, host-guest interactions, and pore topology trends can inform mechanistic modeling.",
-          "link": "https://example.com/article-6",
+          "publishedAt": "2025-12-15",
+          "summary": "Couples alloy design, catalytic testing, and DFT mechanistic analysis to tune intermediate binding and improve EOR activity, relevant for computationally guided catalyst composition optimization.",
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/nr/d5nr04040j",
           "image": {
-            "src": "assets/images/sample-framework.svg",
-            "alt": "Stylized adsorption landscape used as a placeholder research graphic."
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5NR04040J&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for D5NR04040J."
           }
         }
       ]
