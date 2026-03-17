@@ -106,11 +106,13 @@ function createFeedCard(item) {
     .filter(Boolean)
     .map((chunk) => `<span>${chunk}</span>`)
     .join("");
+  const imageSrc = item.image?.src || "assets/images/sample-framework.svg";
+  const imageAlt = item.image?.alt || `Placeholder visual for ${item.displayTitle}`;
 
   return `
     <article class="news-card">
       <div class="news-image-wrap">
-        <img class="news-image" src="${item.image.src}" alt="${item.image.alt}" loading="lazy" />
+        <img class="news-image" src="${imageSrc}" alt="${imageAlt}" loading="lazy" />
       </div>
       <div class="news-main">
         <div class="news-meta">${meta}</div>

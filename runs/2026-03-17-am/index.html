@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morning Digest · 17 Mar 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Morning Digest · 17 Mar 2026</p>
+        <h1>New Papers for Computational Materials Workflows</h1>
+        <p class="hero-copy">
+          This run emphasizes newly published papers that matter for MLIP
+          development, LAMMPS-scale atomistics, DFT-supported screening,
+          adsorption modeling in porous solids, low-dimensional materials,
+          defects, and phase behavior.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-solid" href="../../">Back to home</a>
+          <a class="button button-ghost" href="../../archive/">Archive</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel summary-grid">
+          <div>
+            <p class="panel-label">Selection Basis</p>
+            <p class="metric">10</p>
+            <p class="metric-copy">Primary-source papers ranked by recency and technical relevance.</p>
+          </div>
+          <div>
+            <p class="panel-label">Coverage</p>
+            <p class="metric">Q1</p>
+            <p class="metric-copy">All selected journals verified as upper-quartile venues.</p>
+          </div>
+          <div>
+            <p class="panel-label">Image Policy</p>
+            <p class="metric">Skip if unclear</p>
+            <p class="metric-copy">This run keeps citation-first entries where local figure reuse was blocked or uncertain.</p>
+          </div>
+        </section>
+
+        <section class="section-heading">
+          <div>
+            <p class="eyebrow">Top 10</p>
+            <h2>17 March 2026 selection</h2>
+          </div>
+        </section>
+
+        <section class="archive-list">
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>npj Computational Materials</span>
+              <span>Q1</span>
+              <span>06 Mar 2026</span>
+            </div>
+            <h3>Computational study of density fluctuation-facilitated shear band formation in bulk metallic glasses</h3>
+            <p>
+              Atomistic analysis ties density heterogeneity to shear-band
+              nucleation and propagation in metallic glasses. The paper is
+              immediately useful for MD studies that track local free volume,
+              non-affine motion, and history-dependent plastic localization.
+            </p>
+            <p class="metric-copy">
+              Why it matters: a strong reference for linking structural
+              fluctuations to deformation pathways in disordered materials.
+            </p>
+            <a class="text-link" href="https://www.nature.com/articles/s41524-026-02031-y" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>Sustainable Energy &amp; Fuels</span>
+              <span>Q1</span>
+              <span>04 Mar 2026</span>
+            </div>
+            <h3>DFT-D3 and ab initio molecular dynamics investigation of hydrogen storage in Li-decorated carbon-doped BN analogue of graphyne</h3>
+            <p>
+              Combines dispersion-corrected DFT and AIMD to evaluate adsorption
+              energetics and thermal stability in a Li-functionalized 2D storage
+              platform. It is a compact example of how to couple favorable
+              adsorption energies to finite-temperature validation.
+            </p>
+            <p class="metric-copy">
+              Why it matters: useful for 2D adsorption workflows that need both
+              static site analysis and AIMD stability checks.
+            </p>
+            <a class="text-link" href="https://pubs.rsc.org/en/content/articlelanding/2026/se/d6se00026f" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>Journal of Chemical Theory and Computation</span>
+              <span>Q1</span>
+              <span>24 Feb 2026</span>
+            </div>
+            <h3>Machine Learning Interatomic Potentials Enable Molecular Dynamics Simulations of Doped MoS2</h3>
+            <p>
+              Extends MLIP-driven MD from pristine 2D materials to doped MoS2,
+              which is much closer to device and catalysis use cases than
+              idealized monolayers. The setup is directly relevant to LAMMPS or
+              DeePMD users interested in dopant-driven disorder and transport.
+            </p>
+            <p class="metric-copy">
+              Why it matters: a practical path for larger-scale atomistics in
+              chemically perturbed layered systems.
+            </p>
+            <a class="text-link" href="https://pubs.acs.org/doi/10.1021/acs.jctc.5c02004" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>npj Computational Materials</span>
+              <span>Q1</span>
+              <span>19 Feb 2026</span>
+            </div>
+            <h3>Accurate screening of functional materials with machine-learning potential and transfer-learned regressions: Heusler alloy benchmark</h3>
+            <p>
+              Benchmarks a pipeline that combines machine-learning potentials
+              with transfer-learned regressions for scalable functional-material
+              screening in a broad Heusler-alloy space.
+            </p>
+            <p class="metric-copy">
+              Why it matters: a clean example of how to hand off from atomistic
+              sampling to property ranking without reverting to all-DFT
+              throughput.
+            </p>
+            <a class="text-link" href="https://www.nature.com/articles/s41524-026-02009-w" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>npj Computational Materials</span>
+              <span>Q1</span>
+              <span>16 Feb 2026</span>
+            </div>
+            <h3>Incongruent melting and phase diagram of SiC from machine learning molecular dynamics</h3>
+            <p>
+              Uses ML molecular dynamics to extract melting and phase-behavior
+              information for SiC at temperatures and system sizes that are hard
+              to reach with direct first-principles MD.
+            </p>
+            <p class="metric-copy">
+              Why it matters: a strong model for phase-diagram and coexistence
+              studies in refractory or extreme-condition materials.
+            </p>
+            <a class="text-link" href="https://www.nature.com/articles/s41524-026-01982-4" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>npj Computational Materials</span>
+              <span>Q1</span>
+              <span>06 Feb 2026</span>
+            </div>
+            <h3>Efficient and accurate spatial mixing of machine learned interatomic potentials for materials science</h3>
+            <p>
+              Introduces spatially mixed MLIPs for systems where different local
+              environments benefit from different learned models, rather than a
+              single global potential.
+            </p>
+            <p class="metric-copy">
+              Why it matters: particularly relevant for interfaces, defects, and
+              multiregion simulations that strain monolithic potential fits.
+            </p>
+            <a class="text-link" href="https://www.nature.com/articles/s41524-026-01987-z" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>npj Computational Materials</span>
+              <span>Q1</span>
+              <span>05 Feb 2026</span>
+            </div>
+            <h3>Atomistic understanding of hydrogen bubble-induced embrittlement in tungsten enabled by machine learning molecular dynamics</h3>
+            <p>
+              Brings machine-learning molecular dynamics to hydrogen-bubble
+              damage in tungsten, linking defect evolution and stress
+              concentration to embrittlement in a fusion-material context.
+            </p>
+            <p class="metric-copy">
+              Why it matters: a large-scale defect-dynamics reference for gas,
+              radiation, and implantation problems in refractory metals.
+            </p>
+            <a class="text-link" href="https://www.nature.com/articles/s41524-026-02003-2" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>npj Computational Materials</span>
+              <span>Q1</span>
+              <span>26 Jan 2026</span>
+            </div>
+            <h3>Self-optimizing machine learning potential assisted automated workflow for complex materials design</h3>
+            <p>
+              Pushes MLIP-assisted materials discovery toward an automated,
+              self-improving loop rather than a hand-tuned sequence of training,
+              validation, and screening steps.
+            </p>
+            <p class="metric-copy">
+              Why it matters: highly relevant to active-learning and DP-GEN-like
+              workflows for complex chemistries.
+            </p>
+            <a class="text-link" href="https://www.nature.com/articles/s41524-026-01958-4" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>Journal of Chemical Information and Modeling</span>
+              <span>Q1</span>
+              <span>24 Jan 2026</span>
+            </div>
+            <h3>A Transferable Force Field for Simulating Adsorption in MOFs with Open Metal Sites Based on 12-6-4 Lennard-Jones Potential</h3>
+            <p>
+              Parameterizes a transferable force field for adsorption in MOFs
+              with open metal sites using a 12-6-4 form to improve the treatment
+              of exposed metal centers.
+            </p>
+            <p class="metric-copy">
+              Why it matters: directly actionable for adsorption screening and
+              GCMC workflows where generic force fields miss open-metal-site
+              physics.
+            </p>
+            <a class="text-link" href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c02893" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>Journal of Materials Chemistry A</span>
+              <span>Q1</span>
+              <span>02 Jan 2026</span>
+            </div>
+            <h3>Accelerating discovery through integration: a DFT validated machine learning framework for screening MOF photocatalysts</h3>
+            <p>
+              Couples DFT validation to machine-learning ranking for porous
+              photocatalyst discovery in MOFs, keeping electronic-structure
+              checks in the loop while expanding the searchable candidate space.
+            </p>
+            <p class="metric-copy">
+              Why it matters: a useful pattern for framework screening where
+              structure-property mapping still needs physically grounded
+              descriptors.
+            </p>
+            <a class="text-link" href="https://pubs.rsc.org/en/content/articlelanding/2026/ta/d5ta08107f" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -5,6 +5,154 @@
   },
   "runs": [
     {
+      "id": "2026-03-17-am",
+      "title": "Morning Digest: Computational Materials (Top 10)",
+      "date": "2026-03-17",
+      "slot": "Morning run · 17 Mar 2026",
+      "articleCount": 10,
+      "summary": "Ten newly published papers selected for direct relevance to MLIP development, atomistic simulation, DFT-guided screening, adsorption modeling, defect physics, and simulation-informed materials design.",
+      "page": "runs/2026-03-17-am/",
+      "tags": [
+        "ML Potentials",
+        "DFT",
+        "Adsorption",
+        "Defects",
+        "Low-D Materials"
+      ],
+      "articles": [
+        {
+          "displayTitle": "Density-fluctuation analysis sharpens atomistic picture of metallic-glass shear bands",
+          "title": "Computational study of density fluctuation-facilitated shear band formation in bulk metallic glasses",
+          "journal": "npj Computational Materials",
+          "quartile": "Q1",
+          "publishedAt": "2026-03-06",
+          "summary": "Uses atomistic modeling to resolve how local density fluctuations seed and steer shear-band formation in bulk metallic glasses. The work is useful for researchers building deformation workflows around local structural metrics, non-affine motion, and heterogeneity-sensitive constitutive analysis.",
+          "conclusions": [
+            "The simulations connect density heterogeneity to the onset and propagation of localized shear rather than treating shear bands as purely emergent post-yield features.",
+            "The reported structure-response linkage is a practical cue for future MD studies of metallic-glass rejuvenation, annealing history, and mechanically driven disorder."
+          ],
+          "link": "https://www.nature.com/articles/s41524-026-02031-y"
+        },
+        {
+          "displayTitle": "Li-decorated C-doped BN graphyne remains a viable AIMD-screened storage motif",
+          "title": "DFT-D3 and ab initio molecular dynamics investigation of hydrogen storage in Li-decorated carbon-doped BN analogue of graphyne",
+          "journal": "Sustainable Energy & Fuels",
+          "quartile": "Q1",
+          "publishedAt": "2026-03-04",
+          "summary": "Combines dispersion-corrected DFT with AIMD to test adsorption energetics, stability, and storage performance in a low-dimensional BN-graphyne analogue decorated with Li. It is relevant as a compact workflow example for coupling adsorption-site analysis with finite-temperature stability checks.",
+          "conclusions": [
+            "Li decoration and carbon substitution reshape the adsorption landscape enough to make the platform competitive as a model hydrogen-storage surface.",
+            "AIMD validation matters here because the promising static adsorption picture is only useful if the decorated sheet remains dynamically stable under operating conditions."
+          ],
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/se/d6se00026f"
+        },
+        {
+          "displayTitle": "Doped MoS2 finally gets a purpose-built MLIP route for longer MD windows",
+          "title": "Machine Learning Interatomic Potentials Enable Molecular Dynamics Simulations of Doped MoS2",
+          "journal": "Journal of Chemical Theory and Computation",
+          "quartile": "Q1",
+          "publishedAt": "2026-02-24",
+          "summary": "Develops machine-learned interatomic potentials for doped MoS2 so chemically perturbed 2D structures can be followed at MD scales that are inaccessible with routine DFT. This is directly relevant to LAMMPS or DeePMD users studying dopant effects on structural stability, diffusion, and thermally activated disorder.",
+          "conclusions": [
+            "The study shows that dopant chemistry can be embedded in an MLIP without giving up the local bonding fidelity needed for defect-rich layered materials.",
+            "It provides a template for extending MLIP workflows from pristine monolayers to compositionally complex, device-relevant 2D systems."
+          ],
+          "link": "https://pubs.acs.org/doi/10.1021/acs.jctc.5c02004"
+        },
+        {
+          "displayTitle": "Heusler screening couples MLP energetics to transfer regressions for faster ranking",
+          "title": "Accurate screening of functional materials with machine-learning potential and transfer-learned regressions: Heusler alloy benchmark",
+          "journal": "npj Computational Materials",
+          "quartile": "Q1",
+          "publishedAt": "2026-02-19",
+          "summary": "Benchmarks a combined workflow in which machine-learning potentials generate scalable atomistic information and transfer-learned regressions convert that information into faster functional-material screening. Heusler alloys make this especially relevant for compositionally broad searches where DFT-only ranking is too expensive.",
+          "conclusions": [
+            "The hybrid pipeline narrows the gap between force-model throughput and property-prediction fidelity for multi-component alloy discovery.",
+            "For high-throughput materials projects, it suggests a practical division of labor between potential training, atomistic sampling, and downstream regression."
+          ],
+          "link": "https://www.nature.com/articles/s41524-026-02009-w"
+        },
+        {
+          "displayTitle": "MLMD resolves SiC melting behavior that is hard to map with direct first-principles MD",
+          "title": "Incongruent melting and phase diagram of SiC from machine learning molecular dynamics",
+          "journal": "npj Computational Materials",
+          "quartile": "Q1",
+          "publishedAt": "2026-02-16",
+          "summary": "Applies machine-learning molecular dynamics to the high-temperature phase behavior of SiC and extracts melting characteristics and phase-boundary information at scales beyond routine ab initio MD. It matters for researchers studying extreme-condition ceramics, thermal stability, or phase coexistence with ML-accelerated sampling.",
+          "conclusions": [
+            "The work uses MLMD to attack a thermodynamic regime where system size and simulation time are decisive, not just static energy accuracy.",
+            "Its treatment of incongruent melting is a good reference for phase-diagram workflows that need both fidelity and long-time sampling."
+          ],
+          "link": "https://www.nature.com/articles/s41524-026-01982-4"
+        },
+        {
+          "displayTitle": "Spatially mixed MLIPs target realistic multiregion simulations instead of monolithic fits",
+          "title": "Efficient and accurate spatial mixing of machine learned interatomic potentials for materials science",
+          "journal": "npj Computational Materials",
+          "quartile": "Q1",
+          "publishedAt": "2026-02-06",
+          "summary": "Introduces a scheme for spatially mixing machine-learned interatomic potentials, which is useful when different local environments or subsystems are best described by different models. That makes the paper technically relevant to heterogeneous interfaces, adaptive-resolution workflows, and practical LAMMPS integration strategies.",
+          "conclusions": [
+            "Spatial mixing provides a route around the brittle all-in-one potential strategy for systems with sharply different bonding environments.",
+            "The method could reduce retraining burden in interface and defect problems where one universal model is unnecessarily hard to build."
+          ],
+          "link": "https://www.nature.com/articles/s41524-026-01987-z"
+        },
+        {
+          "displayTitle": "Tungsten embrittlement by hydrogen bubbles is now tractable at realistic atom counts",
+          "title": "Atomistic understanding of hydrogen bubble-induced embrittlement in tungsten enabled by machine learning molecular dynamics",
+          "journal": "npj Computational Materials",
+          "quartile": "Q1",
+          "publishedAt": "2026-02-05",
+          "summary": "Uses machine-learning molecular dynamics to study hydrogen bubble formation and embrittlement pathways in tungsten, a core plasma-facing material. The paper is valuable for defect and interface researchers because it connects large-scale atomistic sampling to a fusion-materials failure mechanism that is difficult to access with direct DFT alone.",
+          "conclusions": [
+            "The MLMD treatment exposes how bubble evolution and local stress concentration couple to embrittlement at scales relevant to real microstructural damage.",
+            "It is a strong reference case for applying ML potentials to radiation, implantation, and gas-defect interactions in refractory metals."
+          ],
+          "link": "https://www.nature.com/articles/s41524-026-02003-2"
+        },
+        {
+          "displayTitle": "Automated self-optimizing MLP workflow pushes complex-material design closer to closed loop",
+          "title": "Self-optimizing machine learning potential assisted automated workflow for complex materials design",
+          "journal": "npj Computational Materials",
+          "quartile": "Q1",
+          "publishedAt": "2026-01-26",
+          "summary": "Presents a closed-loop style workflow where machine-learning potentials participate in an automated, self-optimizing search for complex materials. The paper is methodologically important for DP-GEN-style practitioners because it speaks directly to active data generation, autonomous refinement, and higher-throughput design loops.",
+          "conclusions": [
+            "The workflow reduces manual intervention in potential improvement and candidate exploration, which is exactly the bottleneck in many modern MLIP projects.",
+            "Its value is less about one material system and more about a reusable pattern for automated model-and-structure co-optimization."
+          ],
+          "link": "https://www.nature.com/articles/s41524-026-01958-4"
+        },
+        {
+          "displayTitle": "12-6-4 LJ parameterization improves adsorption modeling at open-metal MOF sites",
+          "title": "A Transferable Force Field for Simulating Adsorption in MOFs with Open Metal Sites Based on 12-6-4 Lennard-Jones Potential",
+          "journal": "Journal of Chemical Information and Modeling",
+          "quartile": "Q1",
+          "publishedAt": "2026-01-24",
+          "summary": "Builds a transferable force field for adsorption in metal-organic frameworks with open metal sites using a 12-6-4 Lennard-Jones form that better captures ion-induced polarization effects. This is highly relevant for GCMC and MD workflows where generic force fields underperform for coordinatively unsaturated centers.",
+          "conclusions": [
+            "The parameterization targets one of the most persistent failure modes in porous-material simulations: inaccurate adsorbate interactions near exposed metal centers.",
+            "If the transferability claims hold across families, the model can reduce the need for case-by-case refits in adsorption screening campaigns."
+          ],
+          "link": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02893"
+        },
+        {
+          "displayTitle": "DFT-validated ML ranking gives MOF photocatalyst screening a cleaner handoff",
+          "title": "Accelerating discovery through integration: a DFT validated machine learning framework for screening MOF photocatalysts",
+          "journal": "Journal of Materials Chemistry A",
+          "quartile": "Q1",
+          "publishedAt": "2026-01-02",
+          "summary": "Integrates DFT validation with machine-learning screening for MOF photocatalysts, making it a good case study in how porous-material discovery can move from electronic-structure calculations to larger candidate libraries without discarding physical checks. It is useful for researchers working on adsorption-active or photoactive frameworks where structure-property mapping must stay tied to atomistic descriptors.",
+          "conclusions": [
+            "The paper shows a practical handoff between first-principles validation and ML acceleration rather than treating the two as separate discovery tracks.",
+            "For porous energy materials, the framework is a workable template for narrowing large chemical spaces before committing to heavier DFT campaigns."
+          ],
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d5ta08107f"
+        }
+      ]
+    },
+    {
       "id": "2026-03-16-live",
       "title": "Live Digest: Computational Materials (Top 10)",
       "date": "2026-03-16",
@@ -12,7 +160,13 @@
       "articleCount": 10,
       "summary": "Fresh pull of ten recent materials papers with strong computational content across MD, DFT, machine-learned potentials, catalysis, battery materials, and simulation-informed experiments.",
       "page": "runs/2026-03-16-live/",
-      "tags": ["ML Potentials", "DFT", "Battery Materials", "Catalysis", "Carbon"],
+      "tags": [
+        "ML Potentials",
+        "DFT",
+        "Battery Materials",
+        "Catalysis",
+        "Carbon"
+      ],
       "heroImage": {
         "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TA07245J&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
         "alt": "Graphical abstract for machine learning potential based ionic conductivity prediction in solid-state electrolytes."
