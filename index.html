@@ -20,17 +20,14 @@
     <div class="discover-shell">
       <header class="discover-header">
         <p class="discover-title">Discover</p>
-        <div class="discover-actions">
-          <a class="icon-btn" href="archive/" aria-label="Open archive">Archive</a>
-          <a class="icon-btn" href="runs/2026-03-17-am/" aria-label="Open latest run">Latest</a>
-        </div>
       </header>
 
       <main>
         <section class="quick-stats" id="quick-stats">
           <div class="stat-card">
-            <p class="stat-label">Latest run</p>
-            <p class="stat-value" id="latest-run-date">-</p>
+            <p class="stat-label">Run date</p>
+            <input class="run-date-picker" id="run-date-picker" type="date" />
+            <p class="stat-hint" id="run-date-hint">Select date to open that run</p>
           </div>
           <div class="stat-card">
             <p class="stat-label">Coverage</p>

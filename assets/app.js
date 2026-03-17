@@ -64,22 +64,31 @@ function toFeedItem(article, idx, category, run) {
   };
 }
 
-function normalizeHomeData(data) {
-  const latestRun = data.runs[0];
-  const materials = latestRun.articles.map((article, idx) =>
-    toFeedItem(article, idx, "materials", latestRun),
+function sortRunsDesc(runs) {
+  return [...runs].sort((a, b) => {
+    const dateOrder = b.date.localeCompare(a.date);
+    if (dateOrder !== 0) {
+      return dateOrder;
+    }
+    return (b.id || "").localeCompare(a.id || "");
+  });
+}
+
+function normalizeHomeData(data, selectedRun) {
+  const materials = selectedRun.articles.map((article, idx) =>
+    toFeedItem(article, idx, "materials", selectedRun),
   );
   const techScience = (data.categories?.tech_science || []).map((item, idx) =>
-    toFeedItem(item, idx, "tech_science", latestRun),
+    toFeedItem(item, idx, "tech_science", selectedRun),
   );
   const world = (data.categories?.world || []).map((item, idx) =>
-    toFeedItem(item, idx, "world", latestRun),
+    toFeedItem(item, idx, "world", selectedRun),
   );
 
   const forYou = [...materials.slice(0, 6), ...techScience.slice(0, 2), ...world.slice(0, 2)];
 
   return {
-    latestRun,
+    selectedRun,
     tabs: {
       for_you: forYou,
       materials,
@@ -210,12 +219,52 @@ function initCardExpandBehavior() {
   });
 }
 
-function renderHome(data) {
-  const normalized = normalizeHomeData(data);
-  const latestRunDate = document.getElementById("latest-run-date");
-  if (latestRunDate) {
-    latestRunDate.textContent = formatDate(normalized.latestRun.date);
+function initRunDatePicker(runs) {
+  const picker = document.getElementById("run-date-picker");
+  const hint = document.getElementById("run-date-hint");
+  if (!picker || !runs.length) {
+    return runs[0];
   }
+
+  const runsByDate = new Map();
+  runs.forEach((run) => {
+    if (!runsByDate.has(run.date)) {
+      runsByDate.set(run.date, run);
+    }
+  });
+
+  const availableDates = [...runsByDate.keys()].sort((a, b) => b.localeCompare(a));
+  const latestDate = availableDates[0];
+  const today = new Date().toISOString().slice(0, 10);
+  const defaultDate = runsByDate.has(today) ? today : latestDate;
+
+  picker.min = availableDates[availableDates.length - 1];
+  picker.max = availableDates[0];
+  picker.value = defaultDate;
+
+  const selectedRun = runsByDate.get(defaultDate);
+  if (hint) {
+    hint.textContent = selectedRun ? selectedRun.slot : "Select date to open that run";
+  }
+
+  picker.addEventListener("change", () => {
+    const run = runsByDate.get(picker.value);
+    if (!run) {
+      if (hint) {
+        hint.textContent = "No run found for selected date";
+      }
+      return;
+    }
+    window.location.href = resolveRunPath(run.page);
+  });
+
+  return selectedRun || runs[0];
+}
+
+function renderHome(data) {
+  const runs = sortRunsDesc(data.runs || []);
+  const selectedRun = initRunDatePicker(runs);
+  const normalized = normalizeHomeData(data, selectedRun);
   initTabBehavior(normalized.tabs);
   initCardExpandBehavior();
 }

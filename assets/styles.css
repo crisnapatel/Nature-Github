@@ -358,7 +358,7 @@ main {
 .discover-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0.75rem;
   margin-bottom: 0.8rem;
 }
@@ -419,6 +419,25 @@ main {
   color: #2f231c;
   font-size: 0.92rem;
   font-weight: 600;
+}
+
+.run-date-picker {
+  width: 100%;
+  margin-top: 0.3rem;
+  border: 1px solid rgba(120, 92, 69, 0.2);
+  border-radius: 10px;
+  background: #fffdf9;
+  color: #2f231c;
+  font: inherit;
+  font-size: 0.96rem;
+  font-weight: 600;
+  padding: 0.5rem 0.6rem;
+}
+
+.stat-hint {
+  margin: 0.42rem 0 0;
+  color: #846d5d;
+  font-size: 0.78rem;
 }
 
 .feed-tabs {
