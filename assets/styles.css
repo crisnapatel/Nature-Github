@@ -408,8 +408,7 @@ main {
 }
 
 .quick-stats {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  display: block;
   gap: 0.45rem;
   margin-bottom: 0.85rem;
 }
@@ -420,6 +419,13 @@ main {
   padding: 0.7rem 0.8rem;
   background: rgba(255, 252, 246, 0.9);
   box-shadow: 0 12px 28px rgba(60, 38, 21, 0.12);
+}
+
+.stat-card-date {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  padding: 0.55rem 0.7rem;
 }
 
 .stat-label {
@@ -437,26 +443,35 @@ main {
   font-weight: 600;
 }
 
-.run-date-picker {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  margin-top: 0.3rem;
-  border: 1px solid rgba(120, 92, 69, 0.2);
-  border-radius: 10px;
-  background: #fffdf9;
-  color: #2f231c;
-  font: inherit;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 0.5rem 0.6rem;
+.date-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
 }
 
-.stat-hint {
-  margin: 0.42rem 0 0;
-  color: #846d5d;
-  font-size: 0.78rem;
+.date-nav-btn {
+  border: 1px solid rgba(120, 92, 69, 0.22);
+  border-radius: 999px;
+  background: #fffdf9;
+  color: #7b604d;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 0.38rem 0.72rem;
+  cursor: pointer;
+}
+
+.date-nav-btn:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.date-nav-label {
+  color: #3d2f25;
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-left: 0.15rem;
 }
 
 .feed-tabs {
@@ -659,6 +674,10 @@ body[data-view="home"] {
   .discover-shell {
     width: calc(100% - 0.75rem);
     padding-top: 0.65rem;
+  }
+
+  .stat-card-date {
+    max-width: 100%;
   }
 
   .news-main {

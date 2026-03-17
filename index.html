@@ -27,10 +27,13 @@
 
       <main>
         <section class="quick-stats" id="quick-stats">
-          <div class="stat-card">
-            <p class="stat-label">Run date</p>
-            <input class="run-date-picker" id="run-date-picker" type="date" />
-            <p class="stat-hint" id="run-date-hint">Select date to open that run</p>
+          <div class="stat-card stat-card-date">
+            <div class="date-nav">
+              <button class="date-nav-btn" id="date-prev" type="button">Prev</button>
+              <button class="date-nav-btn" id="date-today" type="button">Today</button>
+              <button class="date-nav-btn" id="date-next" type="button">Next</button>
+              <span class="date-nav-label" id="date-nav-label">--</span>
+            </div>
           </div>
         </section>
 

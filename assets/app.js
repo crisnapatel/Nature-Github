@@ -72,30 +72,48 @@ function toFeedItem(article, idx, category, run) {
     source: article.journal,
     quartile: article.quartile,
     publishedAt: article.publishedAt,
-    runLabel: run.slot,
   };
 }
 
 function sortRunsDesc(runs) {
+  const runPriority = (run) => {
+    const slot = (run.slot || "").toLowerCase();
+    if (slot.includes("evening") || slot.includes("pm") || slot.includes("16:")) {
+      return 2;
+    }
+    if (slot.includes("morning") || slot.includes("am") || slot.includes("06:")) {
+      return 1;
+    }
+    return 0;
+  };
+
   return [...runs].sort((a, b) => {
     const dateOrder = b.date.localeCompare(a.date);
     if (dateOrder !== 0) {
       return dateOrder;
     }
+    const runOrder = runPriority(b) - runPriority(a);
+    if (runOrder !== 0) {
+      return runOrder;
+    }
     return (b.id || "").localeCompare(a.id || "");
   });
 }
 
-function normalizeHomeData(data, selectedRun) {
-  const selectedArticles = Array.isArray(selectedRun?.articles) ? selectedRun.articles : [];
-  const materials = selectedArticles.map((article, idx) =>
-    toFeedItem(article, idx, "materials", selectedRun),
-  );
+function normalizeHomeData(data, selectedRuns) {
+  const materials = [];
+  selectedRuns.forEach((run) => {
+    const selectedArticles = Array.isArray(run?.articles) ? run.articles : [];
+    selectedArticles.forEach((article, idx) => {
+      materials.push(toFeedItem(article, idx, "materials", run));
+    });
+  });
+
   const techScience = (data.categories?.tech_science || []).map((item, idx) =>
-    toFeedItem(item, idx, "tech_science", selectedRun),
+    toFeedItem(item, idx, "tech_science", selectedRuns[0]),
   );
   const world = (data.categories?.world || []).map((item, idx) =>
-    toFeedItem(item, idx, "world", selectedRun),
+    toFeedItem(item, idx, "world", selectedRuns[0]),
   );
 
   const pools = [
@@ -119,7 +137,7 @@ function normalizeHomeData(data, selectedRun) {
   }
 
   return {
-    selectedRun,
+    selectedRuns,
     tabs: {
       for_you: forYou,
       materials,
@@ -142,7 +160,7 @@ function createConclusions(conclusions) {
 }
 
 function createFeedCard(item) {
-  const meta = [item.source, item.quartile, formatDate(item.publishedAt), item.runLabel]
+  const meta = [item.source, item.quartile, formatDate(item.publishedAt)]
     .filter(Boolean)
     .map((chunk) => `<span>${chunk}</span>`)
     .join("");
@@ -286,53 +304,68 @@ function initCardExpandBehavior() {
   });
 }
 
-function initRunDatePicker(runs, onRunSelected) {
-  const picker = document.getElementById("run-date-picker");
-  const hint = document.getElementById("run-date-hint");
-  if (!picker || !runs.length) {
-    return runs[0];
+function initRunDateControls(runs, onRunsSelected) {
+  const prevBtn = document.getElementById("date-prev");
+  const todayBtn = document.getElementById("date-today");
+  const nextBtn = document.getElementById("date-next");
+  const label = document.getElementById("date-nav-label");
+  if (!prevBtn || !todayBtn || !nextBtn || !label || !runs.length) {
+    return runs.length ? [runs[0]] : [];
   }
 
   const runsByDate = new Map();
   runs.forEach((run) => {
     if (!runsByDate.has(run.date)) {
-      runsByDate.set(run.date, run);
+      runsByDate.set(run.date, []);
     }
+    runsByDate.get(run.date).push(run);
   });
 
-  const availableDates = [...runsByDate.keys()].sort((a, b) => b.localeCompare(a));
-  const latestDate = availableDates[0];
+  const availableDatesAsc = [...runsByDate.keys()].sort((a, b) => a.localeCompare(b));
+  const latestDate = availableDatesAsc[availableDatesAsc.length - 1];
   const today = localIsoDate();
   const defaultDate = runsByDate.has(today) ? today : latestDate;
+  let currentIndex = availableDatesAsc.indexOf(defaultDate);
 
-  picker.min = availableDates[availableDates.length - 1];
-  picker.max = availableDates[0];
-  picker.value = defaultDate;
+  const applyCurrentDate = (keepTab = true) => {
+    const currentDate = availableDatesAsc[currentIndex];
+    const runsOnDate = runsByDate.get(currentDate) || [];
+    label.textContent = formatDate(currentDate);
+    prevBtn.disabled = currentIndex <= 0;
+    nextBtn.disabled = currentIndex >= availableDatesAsc.length - 1;
+    todayBtn.disabled = !runsByDate.has(today) || currentDate === today;
+    if (onRunsSelected) {
+      onRunsSelected(runsOnDate, keepTab);
+    }
+    return runsOnDate;
+  };
 
-  const selectedRun =
-    runsByDate.get(defaultDate) ||
-    runs.find((run) => Array.isArray(run.articles) && run.articles.length > 0);
-  if (hint) {
-    hint.textContent = selectedRun ? selectedRun.slot : "Select date to open that run";
-  }
-
-  picker.addEventListener("change", () => {
-    const run = runsByDate.get(picker.value);
-    if (!run) {
-      if (hint) {
-        hint.textContent = "No run found for selected date";
-      }
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex <= 0) {
       return;
     }
-    if (hint) {
-      hint.textContent = run.slot || "Run selected";
-    }
-    if (onRunSelected) {
-      onRunSelected(run);
-    }
+    currentIndex -= 1;
+    applyCurrentDate(true);
   });
 
-  return selectedRun || runs[0];
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex >= availableDatesAsc.length - 1) {
+      return;
+    }
+    currentIndex += 1;
+    applyCurrentDate(true);
+  });
+
+  todayBtn.addEventListener("click", () => {
+    if (!runsByDate.has(today)) {
+      return;
+    }
+    currentIndex = availableDatesAsc.indexOf(today);
+    applyCurrentDate(true);
+  });
+
+  const selectedRuns = applyCurrentDate(false);
+  return selectedRuns.length ? selectedRuns : [runs[0]];
 }
 
 function renderHome(data) {
@@ -340,20 +373,20 @@ function renderHome(data) {
   const tabController = initTabBehavior();
   initCardExpandBehavior();
 
-  const applyRunToFeed = (run, keepActiveTab = false) => {
-    const normalized = normalizeHomeData(data, run);
+  const applyRunsToFeed = (selectedRuns, keepActiveTab = false) => {
+    const normalized = normalizeHomeData(data, selectedRuns);
     tabController.setTabs(normalized.tabs, keepActiveTab);
   };
 
-  const selectedRun =
-    initRunDatePicker(runs, (run) => applyRunToFeed(run, true)) ||
-    runs.find((run) => Array.isArray(run.articles) && run.articles.length > 0) ||
-    runs[0];
-  if (!selectedRun) {
+  const selectedRuns =
+    initRunDateControls(runs, (runsOnDate, keepTab = true) => applyRunsToFeed(runsOnDate, keepTab)) ||
+    runs.filter((run) => Array.isArray(run.articles) && run.articles.length > 0) ||
+    [runs[0]];
+  if (!selectedRuns.length) {
     renderFeedItems([]);
     return;
   }
-  applyRunToFeed(selectedRun, false);
+  applyRunsToFeed(selectedRuns, false);
 }
 
 loadNewsData()
