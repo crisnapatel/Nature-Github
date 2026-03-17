@@ -1,154 +1,292 @@
 {
   "categories": {
-    "tech_science": [],
-    "world": []
+    "tech_science": [
+      {
+        "displayTitle": "LLaMat frames materials-specific prompting as a real lab productivity layer",
+        "title": "An AI assistant for materials scientists",
+        "journal": "Nature Machine Intelligence",
+        "publishedAt": "2026-03-06",
+        "summary": "Nature highlights LLaMat as a domain-tuned assistant that helps materials researchers query literature, reason over structure-property questions, and reduce friction in day-to-day research planning. It stands out because the reported value is not generic chatbot usage but tighter grounding in materials-science workflows.",
+        "conclusions": [
+          "Domain-specific AI tooling is starting to look more useful for scientific work than one-size-fits-all assistants, especially when the interface is tied to literature and materials language.",
+          "For computational materials groups, the important shift is operational: AI support is moving from novelty demos toward task-specific research acceleration."
+        ],
+        "link": "https://www.nature.com/articles/s42256-026-01041-6",
+        "image": {
+          "src": "assets/images/placeholder-tech.svg",
+          "alt": "Illustrated placeholder card for the Nature Machine Intelligence story on an AI assistant for materials scientists."
+        }
+      },
+      {
+        "displayTitle": "Flexible AI hardware pushes inference closer to skin-mounted devices",
+        "title": "A bendable AI chip for wearable technology",
+        "journal": "Nature",
+        "publishedAt": "2026-01-28",
+        "summary": "Nature's coverage focuses on a bendable AI chip design aimed at wearables, where mechanical compliance matters as much as raw compute. The technical interest is in bringing local inference onto flexible hardware rather than routing everything back to rigid electronics or the cloud.",
+        "conclusions": [
+          "On-device AI for wearables depends on packaging and substrate innovation, not just model efficiency, and this chip advances that hardware side of the equation.",
+          "The nearer-term impact is likely in health and sensing systems that need low-latency inference on deformable form factors."
+        ],
+        "link": "https://www.nature.com/articles/d41586-026-00220-y",
+        "image": {
+          "src": "assets/images/placeholder-tech.svg",
+          "alt": "Illustrated placeholder card for Nature coverage of a bendable AI chip for wearable technology."
+        }
+      },
+      {
+        "displayTitle": "Nature's 2026 watchlist flags quantum, mRNA, and climate hardware as the year's bets",
+        "title": "From quantum computing to mRNA therapeutics: seven technologies to watch in 2026",
+        "journal": "Nature",
+        "publishedAt": "2026-01-21",
+        "summary": "Nature's annual technology watchlist identifies fields expected to matter in 2026, including quantum platforms, next-wave mRNA therapeutics, and climate-focused hardware. The value here is less a single announcement than a concise map of where scientific and engineering momentum is concentrating.",
+        "conclusions": [
+          "The watchlist suggests 2026 will reward technologies that are crossing from proof-of-concept into manufacturing, deployment, or translational scaling.",
+          "For a mixed science-and-technology feed, it is a useful anchor because it frames which technical areas are likely to produce the most consequential follow-on news this year."
+        ],
+        "link": "https://www.nature.com/articles/d41586-025-04030-y",
+        "image": {
+          "src": "assets/images/placeholder-tech.svg",
+          "alt": "Illustrated placeholder card for Nature's seven technologies to watch in 2026 feature."
+        }
+      }
+    ],
+    "world": [
+      {
+        "displayTitle": "Pakistan moves into austerity mode as the Iran war squeezes fuel supply and prices",
+        "title": "Pakistan orders sweeping austerity measures as Iran war triggers oil crisis",
+        "journal": "Al Jazeera",
+        "publishedAt": "2026-03-10",
+        "summary": "Al Jazeera reports that Islamabad is cutting public spending and tightening energy use after the Iran war disrupted regional oil flows and drove up prices. The story matters because it links a geopolitical shock directly to fiscal policy, inflation pressure, and household-level economic pain.",
+        "conclusions": [
+          "Energy-import dependence is amplifying the domestic economic fallout from a regional conflict that Pakistan is not directly controlling.",
+          "The immediate policy response is defensive austerity, which may stabilize short-term balances but risks worsening social and political strain."
+        ],
+        "link": "https://www.aljazeera.com/news/2026/3/10/pakistan-orders-sweeping-austerity-measures-as-iran-war-triggers-oil-crisis",
+        "image": {
+          "src": "assets/images/placeholder-world.svg",
+          "alt": "Illustrated placeholder card for Al Jazeera coverage of Pakistan's austerity response to the oil crisis."
+        }
+      },
+      {
+        "displayTitle": "Oil markets are pricing the Iran war as a longer shock, not a brief disruption",
+        "title": "Iran war threatens prolonged impact on energy markets as oil prices rise",
+        "journal": "Al Jazeera",
+        "publishedAt": "2026-03-08",
+        "summary": "Al Jazeera's market-focused coverage shows traders and governments adjusting to the possibility that the Iran conflict will keep tightening supply and lifting energy costs for longer than an initial panic window. That shifts the story from headline volatility to broader inflation and policy risk.",
+        "conclusions": [
+          "What began as a geopolitical flashpoint is becoming an energy-market restructuring problem with implications for transport, trade, and central-bank planning.",
+          "Sustained oil pressure would spill well beyond the Middle East by feeding imported inflation and slowing growth in vulnerable economies."
+        ],
+        "link": "https://www.aljazeera.com/economy/2026/3/8/iran-war-threatens-prolonged-impact-on-energy-markets-as-oil-prices-rise",
+        "image": {
+          "src": "assets/images/placeholder-world.svg",
+          "alt": "Illustrated placeholder card for Al Jazeera coverage of oil-market disruption tied to the Iran war."
+        }
+      },
+      {
+        "displayTitle": "Extreme heat is now touching one-third of humanity, underscoring climate adaptation failure",
+        "title": "'A sobering preview': extreme heat now affects one in three people globally, study finds",
+        "journal": "The Guardian",
+        "publishedAt": "2026-03-10",
+        "summary": "The Guardian reports on new analysis showing that dangerous heat exposure is now affecting roughly one in three people worldwide. It is a strong global-climate item because it translates warming into a direct population-scale human impact rather than another abstract temperature benchmark.",
+        "conclusions": [
+          "Heat extremes are no longer exceptional regional events; they are becoming a mass-exposure public-health and labor-productivity problem.",
+          "The policy signal is straightforward: mitigation remains necessary, but near-term adaptation planning is already overdue in many regions."
+        ],
+        "link": "https://www.theguardian.com/environment/2026/mar/10/a-sobering-preview-extreme-heat-now-affects-one-in-three-people-globally-study-finds",
+        "image": {
+          "src": "assets/images/placeholder-world.svg",
+          "alt": "Illustrated placeholder card for The Guardian report on global extreme heat exposure."
+        }
+      }
+    ]
   },
   "runs": [
     {
       "id": "2026-03-17-am",
-      "title": "Morning Digest: Computational Materials (Top 10)",
+      "title": "Morning Digest: Materials Feed (4) + Mixed Top 10",
       "date": "2026-03-17",
       "slot": "Morning run · 17 Mar 2026",
-      "articleCount": 10,
-      "summary": "Ten newly published papers selected for direct relevance to MLIP development, atomistic simulation, DFT-guided screening, adsorption modeling, defect physics, and simulation-informed materials design.",
+      "articleCount": 4,
+      "summary": "Four newly published materials papers anchor today's digest, with the home feed interleaving them alongside three Tech & Science items and three World developments for a mixed top-10 view.",
       "page": "runs/2026-03-17-am/",
       "tags": [
-        "ML Potentials",
+        "Mixed Feed",
         "DFT",
         "Adsorption",
-        "Defects",
+        "Porous Materials",
         "Low-D Materials"
       ],
+      "categories": {
+        "tech_science": [
+          {
+            "displayTitle": "LLaMat frames materials-specific prompting as a real lab productivity layer",
+            "title": "An AI assistant for materials scientists",
+            "journal": "Nature Machine Intelligence",
+            "publishedAt": "2026-03-06",
+            "summary": "Nature highlights LLaMat as a domain-tuned assistant that helps materials researchers query literature, reason over structure-property questions, and reduce friction in day-to-day research planning. It stands out because the reported value is not generic chatbot usage but tighter grounding in materials-science workflows.",
+            "conclusions": [
+              "Domain-specific AI tooling is starting to look more useful for scientific work than one-size-fits-all assistants, especially when the interface is tied to literature and materials language.",
+              "For computational materials groups, the important shift is operational: AI support is moving from novelty demos toward task-specific research acceleration."
+            ],
+            "link": "https://www.nature.com/articles/s42256-026-01041-6",
+            "image": {
+              "src": "assets/images/placeholder-tech.svg",
+              "alt": "Illustrated placeholder card for the Nature Machine Intelligence story on an AI assistant for materials scientists."
+            }
+          },
+          {
+            "displayTitle": "Flexible AI hardware pushes inference closer to skin-mounted devices",
+            "title": "A bendable AI chip for wearable technology",
+            "journal": "Nature",
+            "publishedAt": "2026-01-28",
+            "summary": "Nature's coverage focuses on a bendable AI chip design aimed at wearables, where mechanical compliance matters as much as raw compute. The technical interest is in bringing local inference onto flexible hardware rather than routing everything back to rigid electronics or the cloud.",
+            "conclusions": [
+              "On-device AI for wearables depends on packaging and substrate innovation, not just model efficiency, and this chip advances that hardware side of the equation.",
+              "The nearer-term impact is likely in health and sensing systems that need low-latency inference on deformable form factors."
+            ],
+            "link": "https://www.nature.com/articles/d41586-026-00220-y",
+            "image": {
+              "src": "assets/images/placeholder-tech.svg",
+              "alt": "Illustrated placeholder card for Nature coverage of a bendable AI chip for wearable technology."
+            }
+          },
+          {
+            "displayTitle": "Nature's 2026 watchlist flags quantum, mRNA, and climate hardware as the year's bets",
+            "title": "From quantum computing to mRNA therapeutics: seven technologies to watch in 2026",
+            "journal": "Nature",
+            "publishedAt": "2026-01-21",
+            "summary": "Nature's annual technology watchlist identifies fields expected to matter in 2026, including quantum platforms, next-wave mRNA therapeutics, and climate-focused hardware. The value here is less a single announcement than a concise map of where scientific and engineering momentum is concentrating.",
+            "conclusions": [
+              "The watchlist suggests 2026 will reward technologies that are crossing from proof-of-concept into manufacturing, deployment, or translational scaling.",
+              "For a mixed science-and-technology feed, it is a useful anchor because it frames which technical areas are likely to produce the most consequential follow-on news this year."
+            ],
+            "link": "https://www.nature.com/articles/d41586-025-04030-y",
+            "image": {
+              "src": "assets/images/placeholder-tech.svg",
+              "alt": "Illustrated placeholder card for Nature's seven technologies to watch in 2026 feature."
+            }
+          }
+        ],
+        "world": [
+          {
+            "displayTitle": "Pakistan moves into austerity mode as the Iran war squeezes fuel supply and prices",
+            "title": "Pakistan orders sweeping austerity measures as Iran war triggers oil crisis",
+            "journal": "Al Jazeera",
+            "publishedAt": "2026-03-10",
+            "summary": "Al Jazeera reports that Islamabad is cutting public spending and tightening energy use after the Iran war disrupted regional oil flows and drove up prices. The story matters because it links a geopolitical shock directly to fiscal policy, inflation pressure, and household-level economic pain.",
+            "conclusions": [
+              "Energy-import dependence is amplifying the domestic economic fallout from a regional conflict that Pakistan is not directly controlling.",
+              "The immediate policy response is defensive austerity, which may stabilize short-term balances but risks worsening social and political strain."
+            ],
+            "link": "https://www.aljazeera.com/news/2026/3/10/pakistan-orders-sweeping-austerity-measures-as-iran-war-triggers-oil-crisis",
+            "image": {
+              "src": "assets/images/placeholder-world.svg",
+              "alt": "Illustrated placeholder card for Al Jazeera coverage of Pakistan's austerity response to the oil crisis."
+            }
+          },
+          {
+            "displayTitle": "Oil markets are pricing the Iran war as a longer shock, not a brief disruption",
+            "title": "Iran war threatens prolonged impact on energy markets as oil prices rise",
+            "journal": "Al Jazeera",
+            "publishedAt": "2026-03-08",
+            "summary": "Al Jazeera's market-focused coverage shows traders and governments adjusting to the possibility that the Iran conflict will keep tightening supply and lifting energy costs for longer than an initial panic window. That shifts the story from headline volatility to broader inflation and policy risk.",
+            "conclusions": [
+              "What began as a geopolitical flashpoint is becoming an energy-market restructuring problem with implications for transport, trade, and central-bank planning.",
+              "Sustained oil pressure would spill well beyond the Middle East by feeding imported inflation and slowing growth in vulnerable economies."
+            ],
+            "link": "https://www.aljazeera.com/economy/2026/3/8/iran-war-threatens-prolonged-impact-on-energy-markets-as-oil-prices-rise",
+            "image": {
+              "src": "assets/images/placeholder-world.svg",
+              "alt": "Illustrated placeholder card for Al Jazeera coverage of oil-market disruption tied to the Iran war."
+            }
+          },
+          {
+            "displayTitle": "Extreme heat is now touching one-third of humanity, underscoring climate adaptation failure",
+            "title": "'A sobering preview': extreme heat now affects one in three people globally, study finds",
+            "journal": "The Guardian",
+            "publishedAt": "2026-03-10",
+            "summary": "The Guardian reports on new analysis showing that dangerous heat exposure is now affecting roughly one in three people worldwide. It is a strong global-climate item because it translates warming into a direct population-scale human impact rather than another abstract temperature benchmark.",
+            "conclusions": [
+              "Heat extremes are no longer exceptional regional events; they are becoming a mass-exposure public-health and labor-productivity problem.",
+              "The policy signal is straightforward: mitigation remains necessary, but near-term adaptation planning is already overdue in many regions."
+            ],
+            "link": "https://www.theguardian.com/environment/2026/mar/10/a-sobering-preview-extreme-heat-now-affects-one-in-three-people-globally-study-finds",
+            "image": {
+              "src": "assets/images/placeholder-world.svg",
+              "alt": "Illustrated placeholder card for The Guardian report on global extreme heat exposure."
+            }
+          }
+        ]
+      },
       "articles": [
         {
-          "displayTitle": "Density-fluctuation analysis sharpens atomistic picture of metallic-glass shear bands",
-          "title": "Computational study of density fluctuation-facilitated shear band formation in bulk metallic glasses",
-          "journal": "npj Computational Materials",
-          "quartile": "Q1",
-          "publishedAt": "2026-03-06",
-          "summary": "Uses atomistic modeling to resolve how local density fluctuations seed and steer shear-band formation in bulk metallic glasses. The work is useful for researchers building deformation workflows around local structural metrics, non-affine motion, and heterogeneity-sensitive constitutive analysis.",
-          "conclusions": [
-            "The simulations connect density heterogeneity to the onset and propagation of localized shear rather than treating shear bands as purely emergent post-yield features.",
-            "The reported structure-response linkage is a practical cue for future MD studies of metallic-glass rejuvenation, annealing history, and mechanically driven disorder."
-          ],
-          "link": "https://www.nature.com/articles/s41524-026-02031-y"
-        },
-        {
-          "displayTitle": "Li-decorated C-doped BN graphyne remains a viable AIMD-screened storage motif",
+          "displayTitle": "Li-decorated BN graphyne still looks credible once AIMD stress-tests the storage motif",
           "title": "DFT-D3 and ab initio molecular dynamics investigation of hydrogen storage in Li-decorated carbon-doped BN analogue of graphyne",
           "journal": "Sustainable Energy & Fuels",
           "quartile": "Q1",
           "publishedAt": "2026-03-04",
-          "summary": "Combines dispersion-corrected DFT with AIMD to test adsorption energetics, stability, and storage performance in a low-dimensional BN-graphyne analogue decorated with Li. It is relevant as a compact workflow example for coupling adsorption-site analysis with finite-temperature stability checks.",
+          "summary": "This paper combines DFT-D3 adsorption analysis with ab initio molecular dynamics to test whether a Li-decorated, carbon-doped BN graphyne analogue remains a plausible hydrogen-storage platform once thermal motion is included. It is directly relevant to researchers who want adsorption promises on 2D materials to survive finite-temperature validation.",
           "conclusions": [
-            "Li decoration and carbon substitution reshape the adsorption landscape enough to make the platform competitive as a model hydrogen-storage surface.",
-            "AIMD validation matters here because the promising static adsorption picture is only useful if the decorated sheet remains dynamically stable under operating conditions."
+            "The useful contribution is methodological as much as materials-specific: favorable static adsorption metrics are paired with AIMD checks before making storage claims.",
+            "Li decoration and carbon substitution appear to make the BN-graphyne framework more competitive as a lightweight hydrogen-host surface."
           ],
-          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/se/d6se00026f"
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/se/d6se00026f",
+          "image": {
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D6SE00026F&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for the Li-decorated carbon-doped BN graphyne hydrogen-storage study."
+          }
         },
         {
-          "displayTitle": "Doped MoS2 finally gets a purpose-built MLIP route for longer MD windows",
+          "displayTitle": "Doped MoS2 gets a purpose-built MLIP workflow instead of another pristine-sheet shortcut",
           "title": "Machine Learning Interatomic Potentials Enable Molecular Dynamics Simulations of Doped MoS2",
           "journal": "Journal of Chemical Theory and Computation",
           "quartile": "Q1",
           "publishedAt": "2026-02-24",
-          "summary": "Develops machine-learned interatomic potentials for doped MoS2 so chemically perturbed 2D structures can be followed at MD scales that are inaccessible with routine DFT. This is directly relevant to LAMMPS or DeePMD users studying dopant effects on structural stability, diffusion, and thermally activated disorder.",
+          "summary": "The study trains machine-learned interatomic potentials specifically for doped MoS2 so simulations can move beyond the time and size limits of routine DFT while still respecting chemically perturbed local bonding. That makes it valuable for longer-window MD on layered materials where dopants, disorder, and defect interactions dominate the physics.",
           "conclusions": [
-            "The study shows that dopant chemistry can be embedded in an MLIP without giving up the local bonding fidelity needed for defect-rich layered materials.",
-            "It provides a template for extending MLIP workflows from pristine monolayers to compositionally complex, device-relevant 2D systems."
+            "The main technical win is extending MLIP fidelity from ideal monolayers to compositionally modified 2D systems that are closer to real catalytic and electronic use cases.",
+            "For MLIP practitioners, the paper is a practical reference for dataset design and deployment when dopant chemistry cannot be treated as a minor perturbation."
           ],
-          "link": "https://pubs.acs.org/doi/10.1021/acs.jctc.5c02004"
+          "link": "https://pubs.acs.org/doi/10.1021/acs.jctc.5c02004",
+          "image": {
+            "src": "assets/images/placeholder-materials.svg",
+            "alt": "Illustrated placeholder card for the Journal of Chemical Theory and Computation paper on MLIPs for doped MoS2."
+          }
         },
         {
-          "displayTitle": "Heusler screening couples MLP energetics to transfer regressions for faster ranking",
-          "title": "Accurate screening of functional materials with machine-learning potential and transfer-learned regressions: Heusler alloy benchmark",
-          "journal": "npj Computational Materials",
-          "quartile": "Q1",
-          "publishedAt": "2026-02-19",
-          "summary": "Benchmarks a combined workflow in which machine-learning potentials generate scalable atomistic information and transfer-learned regressions convert that information into faster functional-material screening. Heusler alloys make this especially relevant for compositionally broad searches where DFT-only ranking is too expensive.",
-          "conclusions": [
-            "The hybrid pipeline narrows the gap between force-model throughput and property-prediction fidelity for multi-component alloy discovery.",
-            "For high-throughput materials projects, it suggests a practical division of labor between potential training, atomistic sampling, and downstream regression."
-          ],
-          "link": "https://www.nature.com/articles/s41524-026-02009-w"
-        },
-        {
-          "displayTitle": "MLMD resolves SiC melting behavior that is hard to map with direct first-principles MD",
-          "title": "Incongruent melting and phase diagram of SiC from machine learning molecular dynamics",
-          "journal": "npj Computational Materials",
-          "quartile": "Q1",
-          "publishedAt": "2026-02-16",
-          "summary": "Applies machine-learning molecular dynamics to the high-temperature phase behavior of SiC and extracts melting characteristics and phase-boundary information at scales beyond routine ab initio MD. It matters for researchers studying extreme-condition ceramics, thermal stability, or phase coexistence with ML-accelerated sampling.",
-          "conclusions": [
-            "The work uses MLMD to attack a thermodynamic regime where system size and simulation time are decisive, not just static energy accuracy.",
-            "Its treatment of incongruent melting is a good reference for phase-diagram workflows that need both fidelity and long-time sampling."
-          ],
-          "link": "https://www.nature.com/articles/s41524-026-01982-4"
-        },
-        {
-          "displayTitle": "Spatially mixed MLIPs target realistic multiregion simulations instead of monolithic fits",
-          "title": "Efficient and accurate spatial mixing of machine learned interatomic potentials for materials science",
-          "journal": "npj Computational Materials",
-          "quartile": "Q1",
-          "publishedAt": "2026-02-06",
-          "summary": "Introduces a scheme for spatially mixing machine-learned interatomic potentials, which is useful when different local environments or subsystems are best described by different models. That makes the paper technically relevant to heterogeneous interfaces, adaptive-resolution workflows, and practical LAMMPS integration strategies.",
-          "conclusions": [
-            "Spatial mixing provides a route around the brittle all-in-one potential strategy for systems with sharply different bonding environments.",
-            "The method could reduce retraining burden in interface and defect problems where one universal model is unnecessarily hard to build."
-          ],
-          "link": "https://www.nature.com/articles/s41524-026-01987-z"
-        },
-        {
-          "displayTitle": "Tungsten embrittlement by hydrogen bubbles is now tractable at realistic atom counts",
-          "title": "Atomistic understanding of hydrogen bubble-induced embrittlement in tungsten enabled by machine learning molecular dynamics",
-          "journal": "npj Computational Materials",
-          "quartile": "Q1",
-          "publishedAt": "2026-02-05",
-          "summary": "Uses machine-learning molecular dynamics to study hydrogen bubble formation and embrittlement pathways in tungsten, a core plasma-facing material. The paper is valuable for defect and interface researchers because it connects large-scale atomistic sampling to a fusion-materials failure mechanism that is difficult to access with direct DFT alone.",
-          "conclusions": [
-            "The MLMD treatment exposes how bubble evolution and local stress concentration couple to embrittlement at scales relevant to real microstructural damage.",
-            "It is a strong reference case for applying ML potentials to radiation, implantation, and gas-defect interactions in refractory metals."
-          ],
-          "link": "https://www.nature.com/articles/s41524-026-02003-2"
-        },
-        {
-          "displayTitle": "Automated self-optimizing MLP workflow pushes complex-material design closer to closed loop",
-          "title": "Self-optimizing machine learning potential assisted automated workflow for complex materials design",
-          "journal": "npj Computational Materials",
-          "quartile": "Q1",
-          "publishedAt": "2026-01-26",
-          "summary": "Presents a closed-loop style workflow where machine-learning potentials participate in an automated, self-optimizing search for complex materials. The paper is methodologically important for DP-GEN-style practitioners because it speaks directly to active data generation, autonomous refinement, and higher-throughput design loops.",
-          "conclusions": [
-            "The workflow reduces manual intervention in potential improvement and candidate exploration, which is exactly the bottleneck in many modern MLIP projects.",
-            "Its value is less about one material system and more about a reusable pattern for automated model-and-structure co-optimization."
-          ],
-          "link": "https://www.nature.com/articles/s41524-026-01958-4"
-        },
-        {
-          "displayTitle": "12-6-4 LJ parameterization improves adsorption modeling at open-metal MOF sites",
+          "displayTitle": "12-6-4 force-field tuning targets the open-metal-site blind spot in MOF adsorption models",
           "title": "A Transferable Force Field for Simulating Adsorption in MOFs with Open Metal Sites Based on 12-6-4 Lennard-Jones Potential",
           "journal": "Journal of Chemical Information and Modeling",
           "quartile": "Q1",
           "publishedAt": "2026-01-24",
-          "summary": "Builds a transferable force field for adsorption in metal-organic frameworks with open metal sites using a 12-6-4 Lennard-Jones form that better captures ion-induced polarization effects. This is highly relevant for GCMC and MD workflows where generic force fields underperform for coordinatively unsaturated centers.",
+          "summary": "This JCIM paper introduces a transferable adsorption force field for MOFs with open metal sites using a 12-6-4 Lennard-Jones treatment to better capture ion-induced polarization effects. It is directly useful for porous-material screening because exposed metal centers are where many generic force fields fail most visibly.",
           "conclusions": [
-            "The parameterization targets one of the most persistent failure modes in porous-material simulations: inaccurate adsorbate interactions near exposed metal centers.",
-            "If the transferability claims hold across families, the model can reduce the need for case-by-case refits in adsorption screening campaigns."
+            "The paper focuses on a known bottleneck in adsorption simulation accuracy: poor near-metal interactions at coordinatively unsaturated sites.",
+            "If the reported transferability holds across MOF families, the model could reduce the amount of case-by-case parameter refitting in large screening campaigns."
           ],
-          "link": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02893"
+          "link": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02893",
+          "image": {
+            "src": "assets/images/placeholder-materials.svg",
+            "alt": "Illustrated placeholder card for the JCIM paper on a transferable force field for adsorption in MOFs with open metal sites."
+          }
         },
         {
-          "displayTitle": "DFT-validated ML ranking gives MOF photocatalyst screening a cleaner handoff",
+          "displayTitle": "DFT-backed ML ranking gives MOF photocatalyst screening a cleaner handoff",
           "title": "Accelerating discovery through integration: a DFT validated machine learning framework for screening MOF photocatalysts",
           "journal": "Journal of Materials Chemistry A",
           "quartile": "Q1",
           "publishedAt": "2026-01-02",
-          "summary": "Integrates DFT validation with machine-learning screening for MOF photocatalysts, making it a good case study in how porous-material discovery can move from electronic-structure calculations to larger candidate libraries without discarding physical checks. It is useful for researchers working on adsorption-active or photoactive frameworks where structure-property mapping must stay tied to atomistic descriptors.",
+          "summary": "The paper integrates machine-learning screening with DFT validation to narrow candidate space for MOF photocatalysts without fully severing the link to first-principles checks. It is useful as a porous-materials workflow pattern where large candidate libraries still need physically grounded triage.",
           "conclusions": [
-            "The paper shows a practical handoff between first-principles validation and ML acceleration rather than treating the two as separate discovery tracks.",
-            "For porous energy materials, the framework is a workable template for narrowing large chemical spaces before committing to heavier DFT campaigns."
+            "The key methodological value is the handoff: ML is used for breadth, while DFT stays in the loop long enough to keep the ranking physically credible.",
+            "For framework discovery projects, this is a workable model for reducing expensive electronic-structure workload without turning the search into a black-box classifier exercise."
           ],
-          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d5ta08107f"
+          "link": "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d5ta08107f",
+          "image": {
+            "src": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageIdentifier.ManuscriptID=D5TA08107F&imageInfo.ImageIdentifier.Year=2026&imageInfo.ImageType=GA",
+            "alt": "Graphical abstract for the DFT-validated machine-learning framework for screening MOF photocatalysts."
+          }
         }
       ]
     },

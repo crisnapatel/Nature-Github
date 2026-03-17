@@ -109,10 +109,15 @@ function normalizeHomeData(data, selectedRuns) {
     });
   });
 
-  const techScience = (data.categories?.tech_science || []).map((item, idx) =>
+  const selectedCategoryData = selectedRuns[0]?.categories || {
+    tech_science: [],
+    world: [],
+  };
+
+  const techScience = (selectedCategoryData.tech_science || []).map((item, idx) =>
     toFeedItem(item, idx, "tech_science", selectedRuns[0]),
   );
-  const world = (data.categories?.world || []).map((item, idx) =>
+  const world = (selectedCategoryData.world || []).map((item, idx) =>
     toFeedItem(item, idx, "world", selectedRuns[0]),
   );
 

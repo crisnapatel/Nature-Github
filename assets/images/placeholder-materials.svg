@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Materials placeholder</title>
+  <desc id="desc">Abstract geometric placeholder for materials research items without a retrievable source image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <g fill="none" stroke="#a7f3d0" stroke-width="8" opacity="0.75">
+    <circle cx="276" cy="196" r="112" />
+    <circle cx="600" cy="338" r="136" />
+    <circle cx="915" cy="208" r="88" />
+    <circle cx="878" cy="487" r="120" />
+    <path d="M276 196 600 338 915 208 878 487 600 338" />
+  </g>
+  <g fill="#ecfeff">
+    <text x="84" y="560" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700">Materials Feed</text>
+    <text x="84" y="618" font-family="Source Serif 4, Georgia, serif" font-size="34">Fallback image for source pages without reusable figures</text>
+  </g>
+</svg>
