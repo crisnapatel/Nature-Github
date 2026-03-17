@@ -499,6 +499,11 @@ main {
   background: rgba(182, 92, 51, 0.14);
 }
 
+.feed-tab.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .feed-count {
   margin: 0;
   white-space: nowrap;

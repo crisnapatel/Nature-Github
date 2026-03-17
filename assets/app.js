@@ -13,11 +13,23 @@ function resolveRunPath(pagePath) {
 }
 
 function formatDate(dateString) {
+  const parsed = new Date(dateString);
+  if (Number.isNaN(parsed.getTime())) {
+    return "Unknown date";
+  }
   return new Intl.DateTimeFormat("en-IN", {
     day: "2-digit",
     month: "short",
     year: "numeric",
-  }).format(new Date(dateString));
+  }).format(parsed);
+}
+
+function localIsoDate() {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
 }
 
 function renderArchive(data) {
@@ -75,7 +87,8 @@ function sortRunsDesc(runs) {
 }
 
 function normalizeHomeData(data, selectedRun) {
-  const materials = selectedRun.articles.map((article, idx) =>
+  const selectedArticles = Array.isArray(selectedRun?.articles) ? selectedRun.articles : [];
+  const materials = selectedArticles.map((article, idx) =>
     toFeedItem(article, idx, "materials", selectedRun),
   );
   const techScience = (data.categories?.tech_science || []).map((item, idx) =>
@@ -85,7 +98,25 @@ function normalizeHomeData(data, selectedRun) {
     toFeedItem(item, idx, "world", selectedRun),
   );
 
-  const forYou = [...materials.slice(0, 6), ...techScience.slice(0, 2), ...world.slice(0, 2)];
+  const pools = [
+    { key: "materials", items: materials },
+    { key: "tech_science", items: techScience },
+    { key: "world", items: world },
+  ];
+  const pointers = { materials: 0, tech_science: 0, world: 0 };
+  const forYou = [];
+  let progress = true;
+  while (progress) {
+    progress = false;
+    for (const pool of pools) {
+      const idx = pointers[pool.key];
+      if (idx < pool.items.length) {
+        forYou.push(pool.items[idx]);
+        pointers[pool.key] += 1;
+        progress = true;
+      }
+    }
+  }
 
   return {
     selectedRun,
@@ -171,18 +202,50 @@ function renderFeedItems(items) {
   cardsStream.innerHTML = items.map(createFeedCard).join("");
 }
 
-function initTabBehavior(tabs) {
+function initTabBehavior() {
   const tabsEl = document.getElementById("feed-tabs");
   if (!tabsEl) {
-    return;
+    return { setTabs: () => {} };
   }
 
   let activeTab = "for_you";
-  renderFeedItems(tabs[activeTab] || []);
+  let currentTabs = {
+    for_you: [],
+    materials: [],
+    tech_science: [],
+    world: [],
+  };
+
+  const setTabs = (tabs, keepActiveIfPossible = false) => {
+    currentTabs = tabs;
+    const orderedTabs = ["for_you", "materials", "tech_science", "world"];
+    const firstNonEmptyTab =
+      orderedTabs.find((tabKey) => (currentTabs[tabKey] || []).length > 0) || "for_you";
+
+    if (!keepActiveIfPossible || !(currentTabs[activeTab] || []).length) {
+      activeTab = (currentTabs.for_you || []).length > 0 ? "for_you" : firstNonEmptyTab;
+    }
+
+    tabsEl.querySelectorAll(".feed-tab").forEach((tabBtn) => {
+      const key = tabBtn.dataset.tab;
+      const hasItems = (currentTabs[key] || []).length > 0;
+      tabBtn.classList.toggle("is-disabled", !hasItems);
+      tabBtn.disabled = !hasItems;
+      tabBtn.setAttribute("aria-disabled", String(!hasItems));
+      if (!hasItems) {
+        tabBtn.title = "No items yet for this category";
+      } else {
+        tabBtn.title = "";
+      }
+      tabBtn.classList.toggle("is-active", key === activeTab);
+    });
+
+    renderFeedItems(currentTabs[activeTab] || []);
+  };
 
   tabsEl.addEventListener("click", (event) => {
     const btn = event.target.closest("[data-tab]");
-    if (!btn) {
+    if (!btn || btn.disabled) {
       return;
     }
 
@@ -190,8 +253,10 @@ function initTabBehavior(tabs) {
     tabsEl.querySelectorAll(".feed-tab").forEach((tabBtn) => {
       tabBtn.classList.toggle("is-active", tabBtn === btn);
     });
-    renderFeedItems(tabs[activeTab] || []);
+    renderFeedItems(currentTabs[activeTab] || []);
   });
+
+  return { setTabs };
 }
 
 function initCardExpandBehavior() {
@@ -221,7 +286,7 @@ function initCardExpandBehavior() {
   });
 }
 
-function initRunDatePicker(runs) {
+function initRunDatePicker(runs, onRunSelected) {
   const picker = document.getElementById("run-date-picker");
   const hint = document.getElementById("run-date-hint");
   if (!picker || !runs.length) {
@@ -237,14 +302,16 @@ function initRunDatePicker(runs) {
 
   const availableDates = [...runsByDate.keys()].sort((a, b) => b.localeCompare(a));
   const latestDate = availableDates[0];
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localIsoDate();
   const defaultDate = runsByDate.has(today) ? today : latestDate;
 
   picker.min = availableDates[availableDates.length - 1];
   picker.max = availableDates[0];
   picker.value = defaultDate;
 
-  const selectedRun = runsByDate.get(defaultDate);
+  const selectedRun =
+    runsByDate.get(defaultDate) ||
+    runs.find((run) => Array.isArray(run.articles) && run.articles.length > 0);
   if (hint) {
     hint.textContent = selectedRun ? selectedRun.slot : "Select date to open that run";
   }
@@ -257,7 +324,12 @@ function initRunDatePicker(runs) {
       }
       return;
     }
-    window.location.href = resolveRunPath(run.page);
+    if (hint) {
+      hint.textContent = run.slot || "Run selected";
+    }
+    if (onRunSelected) {
+      onRunSelected(run);
+    }
   });
 
   return selectedRun || runs[0];
@@ -265,10 +337,23 @@ function initRunDatePicker(runs) {
 
 function renderHome(data) {
   const runs = sortRunsDesc(data.runs || []);
-  const selectedRun = initRunDatePicker(runs);
-  const normalized = normalizeHomeData(data, selectedRun);
-  initTabBehavior(normalized.tabs);
+  const tabController = initTabBehavior();
   initCardExpandBehavior();
+
+  const applyRunToFeed = (run, keepActiveTab = false) => {
+    const normalized = normalizeHomeData(data, run);
+    tabController.setTabs(normalized.tabs, keepActiveTab);
+  };
+
+  const selectedRun =
+    initRunDatePicker(runs, (run) => applyRunToFeed(run, true)) ||
+    runs.find((run) => Array.isArray(run.articles) && run.articles.length > 0) ||
+    runs[0];
+  if (!selectedRun) {
+    renderFeedItems([]);
+    return;
+  }
+  applyRunToFeed(selectedRun, false);
 }
 
 loadNewsData()
