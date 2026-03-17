@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evening Digest · 17 Mar 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Evening Digest · 17 Mar 2026</p>
+        <h1>Materials Feed for Tonight's Mixed Top 10</h1>
+        <p class="hero-copy">
+          This dated run keeps the computational-materials spine of tonight's digest:
+          four recent papers spanning machine-learned interatomic potentials,
+          multicomponent adsorption in MOFs, and flexible-framework water uptake.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-solid" href="../../">Back to home</a>
+          <a class="button button-ghost" href="../../archive/">Archive</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel summary-grid">
+          <div>
+            <p class="panel-label">Materials Items</p>
+            <p class="metric">4</p>
+            <p class="metric-copy">Fresh papers selected for direct computational relevance.</p>
+          </div>
+          <div>
+            <p class="panel-label">Mixed Feed</p>
+            <p class="metric">10</p>
+            <p class="metric-copy">Home interleaves these with 3 Tech &amp; Science and 3 World items.</p>
+          </div>
+          <div>
+            <p class="panel-label">Image Policy</p>
+            <p class="metric">Required</p>
+            <p class="metric-copy">Every card has image metadata; placeholder artwork is used when source figures are not readily retrievable.</p>
+          </div>
+        </section>
+
+        <section class="section-heading">
+          <div>
+            <p class="eyebrow">Materials</p>
+            <h2>17 March 2026 evening selection</h2>
+          </div>
+        </section>
+
+        <section class="archive-list">
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>Journal of Chemical Theory and Computation</span>
+              <span>Q1</span>
+              <span>03 Mar 2026</span>
+            </div>
+            <h3>Machine-Learning Interatomic Potentials Achieving CCSD(T) Accuracy for Systems with Extended Covalent Networks and van der Waals Interactions</h3>
+            <p>
+              This JCTC paper uses delta-learning on top of a dispersion-aware tight-binding baseline to train machine-learned interatomic potentials that reach coupled-cluster accuracy for extended covalent networks with meaningful van der Waals interactions. Its practical value for computational materials groups is that quasi-2D COFs can now be studied with near-benchmark energetics for interlayer binding and hydrogen adsorption without collapsing back to tiny-cell quantum chemistry.
+            </p>
+            <p class="metric-copy">
+              Why it matters: The main advance is methodological: chemically accurate MLIPs are shown to be workable even when extended covalent bonding and long-range dispersion both matter.
+            </p>
+            <a class="text-link" href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.5c02045" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>Journal of Chemical Theory and Computation</span>
+              <span>Q1</span>
+              <span>24 Feb 2026</span>
+            </div>
+            <h3>Machine Learning Interatomic Potentials Enable Molecular Dynamics Simulations of Doped MoS2</h3>
+            <p>
+              The study benchmarks a universal machine-learned interatomic potential against DFT for 25 dopants in MoS2 and then uses the model for heating-cooling molecular dynamics that reveal clustering, fracturing, interlayer diffusion, and compound formation. It is directly relevant to low-dimensional materials design because it moves doped-sheet simulation from static formation-energy checks toward larger, thermally activated structural evolution.
+            </p>
+            <p class="metric-copy">
+              Why it matters: The useful contribution is not just another MLIP application but a detailed validation workflow for chemically diverse dopants in a technologically important 2D host.
+            </p>
+            <a class="text-link" href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.5c02004" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>The Journal of Physical Chemistry C</span>
+              <span>Q1</span>
+              <span>09 Feb 2026</span>
+            </div>
+            <h3>Machine Learning Interatomic Potentials for Modeling Framework Flexibility and Water Uptake in NbOFFIVE-1-Ni Metal–Organic Framework</h3>
+            <p>
+              This JPCC paper trains MLIPs on first-principles molecular dynamics data so the flexible MOF NbOFFIVE-1-Ni can be simulated on nanosecond time scales while preserving the framework response needed for realistic water adsorption predictions. The significance is that framework flexibility is folded back into GCMC-style adsorption analysis in a way that better matches experiment than rigid-framework approximations.
+            </p>
+            <p class="metric-copy">
+              Why it matters: The paper directly addresses a persistent porous-materials problem: adsorption errors caused by treating a genuinely flexible framework as rigid.
+            </p>
+            <a class="text-link" href="https://pubs.acs.org/doi/10.1021/acs.jpcc.6c00023" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-meta">
+              <span>The Journal of Physical Chemistry B</span>
+              
+              <span>05 Feb 2026</span>
+            </div>
+            <h3>Efficient Prediction of Multicomponent Adsorption Isotherms and Enthalpies of Adsorption in MOFs Using Classical Density Functional Theory</h3>
+            <p>
+              The paper shows that a PC-SAFT-based classical density functional theory workflow can reproduce GCMC multicomponent adsorption isotherms and adsorption enthalpies for MOFs while running orders of magnitude faster on GPU hardware. For adsorption and separations research, the practical message is that realistic binary, ternary, and quaternary mixture screening may no longer need to rely on much slower Monte Carlo-only pipelines.
+            </p>
+            <p class="metric-copy">
+              Why it matters: Speed matters here because the method is pitched as predictive rather than a fit-to-simulation shortcut, making it useful for high-throughput adsorbent screening.
+            </p>
+            <a class="text-link" href="https://pubs.acs.org/doi/10.1021/acs.jpcb.5c08035" target="_blank" rel="noreferrer">Open paper</a>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

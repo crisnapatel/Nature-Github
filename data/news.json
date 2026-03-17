@@ -2,106 +2,293 @@
   "categories": {
     "tech_science": [
       {
-        "displayTitle": "LLaMat frames materials-specific prompting as a real lab productivity layer",
-        "title": "An AI assistant for materials scientists",
-        "journal": "Nature Machine Intelligence",
-        "publishedAt": "2026-03-06",
-        "summary": "Nature highlights LLaMat as a domain-tuned assistant that helps materials researchers query literature, reason over structure-property questions, and reduce friction in day-to-day research planning. It stands out because the reported value is not generic chatbot usage but tighter grounding in materials-science workflows.",
-        "conclusions": [
-          "Domain-specific AI tooling is starting to look more useful for scientific work than one-size-fits-all assistants, especially when the interface is tied to literature and materials language.",
-          "For computational materials groups, the important shift is operational: AI support is moving from novelty demos toward task-specific research acceleration."
-        ],
-        "link": "https://www.nature.com/articles/s42256-026-01041-6",
-        "image": {
-          "src": "assets/images/placeholder-tech.svg",
-          "alt": "Illustrated placeholder card for the Nature Machine Intelligence story on an AI assistant for materials scientists."
-        }
-      },
-      {
-        "displayTitle": "Flexible AI hardware pushes inference closer to skin-mounted devices",
-        "title": "A bendable AI chip for wearable technology",
+        "displayTitle": "Stem-cell fetal surgery may be turning spina bifida repair into a regenerative therapy",
+        "title": "World-first stem-cell therapy shows promise for treating spina bifida in the womb",
         "journal": "Nature",
-        "publishedAt": "2026-01-28",
-        "summary": "Nature's coverage focuses on a bendable AI chip design aimed at wearables, where mechanical compliance matters as much as raw compute. The technical interest is in bringing local inference onto flexible hardware rather than routing everything back to rigid electronics or the cloud.",
+        "publishedAt": "2026-02-26",
+        "summary": "Nature reports early clinical evidence that placenta-derived stem cells applied during fetal surgery for spina bifida were safe in a six-patient trial and reversed hindbrain herniation in all newborns. The technical importance is that regenerative cell therapy is being layered onto an existing in utero surgical workflow rather than treated as a disconnected speculative intervention.",
         "conclusions": [
-          "On-device AI for wearables depends on packaging and substrate innovation, not just model efficiency, and this chip advances that hardware side of the equation.",
-          "The nearer-term impact is likely in health and sensing systems that need low-latency inference on deformable form factors."
+          "The result is notable because it pairs a world-first human procedure with a concrete near-term translational target instead of a distant platform promise.",
+          "The evidence base is still small, but the study raises the ceiling for prenatal intervention from structural repair toward partial neural rescue."
         ],
-        "link": "https://www.nature.com/articles/d41586-026-00220-y",
+        "link": "https://www.nature.com/articles/d41586-026-00602-z",
         "image": {
           "src": "assets/images/placeholder-tech.svg",
-          "alt": "Illustrated placeholder card for Nature coverage of a bendable AI chip for wearable technology."
+          "alt": "Illustrated placeholder card for the Nature report on in utero stem-cell therapy for spina bifida."
         }
       },
       {
-        "displayTitle": "Nature's 2026 watchlist flags quantum, mRNA, and climate hardware as the year's bets",
+        "displayTitle": "Ultrasound brain-computer interfaces are drawing serious capital before the science is settled",
+        "title": "OpenAI-backed firm to use ultrasound to read minds. Does the science stand up?",
+        "journal": "Nature",
+        "publishedAt": "2026-02-02",
+        "summary": "Nature examines Merge Labs, a heavily funded brain-computer-interface company pursuing ultrasound-based brain sensing and stimulation as a less invasive alternative to deep implanted electrodes. The story is technically substantive because it focuses on spatial resolution, blood-flow lag, and the difference between plausible therapeutic modulation and real-time intent decoding.",
+        "conclusions": [
+          "The commercial signal is strong, but the scientific bottleneck remains whether ultrasound can deliver fast enough readout for genuinely interactive BCIs.",
+          "Even if consumer-style mind reading is overstated, the modality could still matter for broader neuromodulation and multi-site brain therapy."
+        ],
+        "link": "https://www.nature.com/articles/d41586-026-00329-x",
+        "image": {
+          "src": "assets/images/placeholder-tech.svg",
+          "alt": "Illustrated placeholder card for the Nature explainer on ultrasound brain-computer interfaces backed by OpenAI investors."
+        }
+      },
+      {
+        "displayTitle": "Nature's 2026 watchlist keeps pointing to deployable science, not just lab curiosities",
         "title": "From quantum computing to mRNA therapeutics: seven technologies to watch in 2026",
         "journal": "Nature",
         "publishedAt": "2026-01-21",
-        "summary": "Nature's annual technology watchlist identifies fields expected to matter in 2026, including quantum platforms, next-wave mRNA therapeutics, and climate-focused hardware. The value here is less a single announcement than a concise map of where scientific and engineering momentum is concentrating.",
+        "summary": "Nature's annual technology feature highlights areas likely to matter this year, including quantum hardware, AI-driven climate modelling, optical connectomics, and next-wave mRNA therapeutics. It belongs in the feed because it maps where scientific novelty is moving toward instrumentation, manufacturing, or translational deployment rather than staying confined to proof-of-concept status.",
         "conclusions": [
-          "The watchlist suggests 2026 will reward technologies that are crossing from proof-of-concept into manufacturing, deployment, or translational scaling.",
-          "For a mixed science-and-technology feed, it is a useful anchor because it frames which technical areas are likely to produce the most consequential follow-on news this year."
+          "The common thread across the seven picks is operational maturity: each field is being judged by whether it can scale, manufacture, or integrate into real workflows.",
+          "For a mixed science-and-technology digest, it serves as a useful frame for interpreting which later 2026 announcements are likely to have durable impact."
         ],
-        "link": "https://www.nature.com/articles/d41586-025-04030-y",
+        "link": "https://www.nature.com/articles/d41586-026-00188-6",
         "image": {
           "src": "assets/images/placeholder-tech.svg",
-          "alt": "Illustrated placeholder card for Nature's seven technologies to watch in 2026 feature."
+          "alt": "Illustrated placeholder card for Nature's 2026 technologies-to-watch feature."
         }
       }
     ],
     "world": [
       {
-        "displayTitle": "Pakistan moves into austerity mode as the Iran war squeezes fuel supply and prices",
-        "title": "Pakistan orders sweeping austerity measures as Iran war triggers oil crisis",
+        "displayTitle": "Oil markets are still trading the Iran war as a live inflation and growth shock",
+        "title": "Oil prices swing wildly amid mixed messages over Iran war",
         "journal": "Al Jazeera",
-        "publishedAt": "2026-03-10",
-        "summary": "Al Jazeera reports that Islamabad is cutting public spending and tightening energy use after the Iran war disrupted regional oil flows and drove up prices. The story matters because it links a geopolitical shock directly to fiscal policy, inflation pressure, and household-level economic pain.",
+        "publishedAt": "2026-03-11",
+        "summary": "Al Jazeera reports violent moves in crude prices as traders react to contradictory signals about the closure of the Strait of Hormuz and the durability of wartime supply disruptions. The global significance is straightforward: a sustained energy shock would feed imported inflation, strain fuel subsidies, and slow growth well beyond the Middle East.",
         "conclusions": [
-          "Energy-import dependence is amplifying the domestic economic fallout from a regional conflict that Pakistan is not directly controlling.",
-          "The immediate policy response is defensive austerity, which may stabilize short-term balances but risks worsening social and political strain."
+          "The market is no longer reacting to headline risk alone; it is trying to price how much normal oil flow can actually resume.",
+          "For governments, the economic risk is secondary transmission through transport costs, consumer prices, and emergency fiscal measures."
         ],
-        "link": "https://www.aljazeera.com/news/2026/3/10/pakistan-orders-sweeping-austerity-measures-as-iran-war-triggers-oil-crisis",
+        "link": "https://www.aljazeera.com/economy/2026/3/11/oil-prices-swing-wildly-amid-mixed-messages-over-iran-war",
         "image": {
           "src": "assets/images/placeholder-world.svg",
-          "alt": "Illustrated placeholder card for Al Jazeera coverage of Pakistan's austerity response to the oil crisis."
+          "alt": "Illustrated placeholder card for Al Jazeera coverage of oil-market volatility during the Iran war."
         }
       },
       {
-        "displayTitle": "Oil markets are pricing the Iran war as a longer shock, not a brief disruption",
-        "title": "Iran war threatens prolonged impact on energy markets as oil prices rise",
-        "journal": "Al Jazeera",
-        "publishedAt": "2026-03-08",
-        "summary": "Al Jazeera's market-focused coverage shows traders and governments adjusting to the possibility that the Iran conflict will keep tightening supply and lifting energy costs for longer than an initial panic window. That shifts the story from headline volatility to broader inflation and policy risk.",
-        "conclusions": [
-          "What began as a geopolitical flashpoint is becoming an energy-market restructuring problem with implications for transport, trade, and central-bank planning.",
-          "Sustained oil pressure would spill well beyond the Middle East by feeding imported inflation and slowing growth in vulnerable economies."
-        ],
-        "link": "https://www.aljazeera.com/economy/2026/3/8/iran-war-threatens-prolonged-impact-on-energy-markets-as-oil-prices-rise",
-        "image": {
-          "src": "assets/images/placeholder-world.svg",
-          "alt": "Illustrated placeholder card for Al Jazeera coverage of oil-market disruption tied to the Iran war."
-        }
-      },
-      {
-        "displayTitle": "Extreme heat is now touching one-third of humanity, underscoring climate adaptation failure",
-        "title": "'A sobering preview': extreme heat now affects one in three people globally, study finds",
+        "displayTitle": "Extreme heat is now constraining daily life for a third of humanity, not just vulnerable edge cases",
+        "title": "‘A sobering preview’: extreme heat now affects one in three people globally, study finds",
         "journal": "The Guardian",
         "publishedAt": "2026-03-10",
-        "summary": "The Guardian reports on new analysis showing that dangerous heat exposure is now affecting roughly one in three people worldwide. It is a strong global-climate item because it translates warming into a direct population-scale human impact rather than another abstract temperature benchmark.",
+        "summary": "The Guardian reports on new research showing that severe heat now restricts normal physical activity for roughly one-third of the global population, with especially sharp impacts on older adults and lower-income regions. It matters as a world item because climate change is being measured here in direct human workability and liveability, not only temperature records.",
         "conclusions": [
-          "Heat extremes are no longer exceptional regional events; they are becoming a mass-exposure public-health and labor-productivity problem.",
-          "The policy signal is straightforward: mitigation remains necessary, but near-term adaptation planning is already overdue in many regions."
+          "The study reframes heat as a mass public-health and productivity constraint rather than a periodic weather anomaly.",
+          "Near-term adaptation investments are urgent, but the underlying signal remains that each additional increment of warming broadens human exposure quickly."
         ],
-        "link": "https://www.theguardian.com/environment/2026/mar/10/a-sobering-preview-extreme-heat-now-affects-one-in-three-people-globally-study-finds",
+        "link": "https://www.theguardian.com/environment/2026/mar/10/extreme-heat-study-global-warming-physical-activity",
         "image": {
           "src": "assets/images/placeholder-world.svg",
-          "alt": "Illustrated placeholder card for The Guardian report on global extreme heat exposure."
+          "alt": "Illustrated placeholder card for The Guardian report on global exposure to extreme heat."
+        }
+      },
+      {
+        "displayTitle": "Planetary warming is accelerating fast enough to tighten the 1.5C timeline again",
+        "title": "Humanity heating planet faster than ever before, study finds",
+        "journal": "The Guardian",
+        "publishedAt": "2026-03-06",
+        "summary": "The Guardian highlights analysis suggesting human-driven warming has accelerated to roughly 0.35C per decade in the last ten years after filtering out major natural fluctuations. The broader importance is that the world may be burning through remaining temperature guardrails faster than many policy pathways still assume.",
+        "conclusions": [
+          "This is a climate-governance story as much as a science story because faster warming compresses the policy window for both mitigation and adaptation.",
+          "If the trend persists, discussions about threshold timing and tipping-risk exposure will become materially more urgent this decade."
+        ],
+        "link": "https://www.theguardian.com/environment/2026/mar/06/humanity-heating-planet-faster-than-ever-before-study-finds",
+        "image": {
+          "src": "assets/images/placeholder-world.svg",
+          "alt": "Illustrated placeholder card for The Guardian report on the acceleration of human-driven global warming."
         }
       }
     ]
   },
   "runs": [
+    {
+      "id": "2026-03-17-pm",
+      "title": "Evening Digest: Materials Feed (4) + Mixed Top 10",
+      "date": "2026-03-17",
+      "slot": "Evening run · 17 Mar 2026",
+      "articleCount": 4,
+      "summary": "Four newly published computational materials papers anchor tonight's digest, while the home feed interleaves them with three technically substantive science stories and three major world developments.",
+      "page": "runs/2026-03-17-pm/",
+      "tags": [
+        "ML Potentials",
+        "MOFs",
+        "Adsorption",
+        "Low-D Materials",
+        "Climate & Energy"
+      ],
+      "categories": {
+        "tech_science": [
+          {
+            "displayTitle": "Stem-cell fetal surgery may be turning spina bifida repair into a regenerative therapy",
+            "title": "World-first stem-cell therapy shows promise for treating spina bifida in the womb",
+            "journal": "Nature",
+            "publishedAt": "2026-02-26",
+            "summary": "Nature reports early clinical evidence that placenta-derived stem cells applied during fetal surgery for spina bifida were safe in a six-patient trial and reversed hindbrain herniation in all newborns. The technical importance is that regenerative cell therapy is being layered onto an existing in utero surgical workflow rather than treated as a disconnected speculative intervention.",
+            "conclusions": [
+              "The result is notable because it pairs a world-first human procedure with a concrete near-term translational target instead of a distant platform promise.",
+              "The evidence base is still small, but the study raises the ceiling for prenatal intervention from structural repair toward partial neural rescue."
+            ],
+            "link": "https://www.nature.com/articles/d41586-026-00602-z",
+            "image": {
+              "src": "assets/images/placeholder-tech.svg",
+              "alt": "Illustrated placeholder card for the Nature report on in utero stem-cell therapy for spina bifida."
+            }
+          },
+          {
+            "displayTitle": "Ultrasound brain-computer interfaces are drawing serious capital before the science is settled",
+            "title": "OpenAI-backed firm to use ultrasound to read minds. Does the science stand up?",
+            "journal": "Nature",
+            "publishedAt": "2026-02-02",
+            "summary": "Nature examines Merge Labs, a heavily funded brain-computer-interface company pursuing ultrasound-based brain sensing and stimulation as a less invasive alternative to deep implanted electrodes. The story is technically substantive because it focuses on spatial resolution, blood-flow lag, and the difference between plausible therapeutic modulation and real-time intent decoding.",
+            "conclusions": [
+              "The commercial signal is strong, but the scientific bottleneck remains whether ultrasound can deliver fast enough readout for genuinely interactive BCIs.",
+              "Even if consumer-style mind reading is overstated, the modality could still matter for broader neuromodulation and multi-site brain therapy."
+            ],
+            "link": "https://www.nature.com/articles/d41586-026-00329-x",
+            "image": {
+              "src": "assets/images/placeholder-tech.svg",
+              "alt": "Illustrated placeholder card for the Nature explainer on ultrasound brain-computer interfaces backed by OpenAI investors."
+            }
+          },
+          {
+            "displayTitle": "Nature's 2026 watchlist keeps pointing to deployable science, not just lab curiosities",
+            "title": "From quantum computing to mRNA therapeutics: seven technologies to watch in 2026",
+            "journal": "Nature",
+            "publishedAt": "2026-01-21",
+            "summary": "Nature's annual technology feature highlights areas likely to matter this year, including quantum hardware, AI-driven climate modelling, optical connectomics, and next-wave mRNA therapeutics. It belongs in the feed because it maps where scientific novelty is moving toward instrumentation, manufacturing, or translational deployment rather than staying confined to proof-of-concept status.",
+            "conclusions": [
+              "The common thread across the seven picks is operational maturity: each field is being judged by whether it can scale, manufacture, or integrate into real workflows.",
+              "For a mixed science-and-technology digest, it serves as a useful frame for interpreting which later 2026 announcements are likely to have durable impact."
+            ],
+            "link": "https://www.nature.com/articles/d41586-026-00188-6",
+            "image": {
+              "src": "assets/images/placeholder-tech.svg",
+              "alt": "Illustrated placeholder card for Nature's 2026 technologies-to-watch feature."
+            }
+          }
+        ],
+        "world": [
+          {
+            "displayTitle": "Oil markets are still trading the Iran war as a live inflation and growth shock",
+            "title": "Oil prices swing wildly amid mixed messages over Iran war",
+            "journal": "Al Jazeera",
+            "publishedAt": "2026-03-11",
+            "summary": "Al Jazeera reports violent moves in crude prices as traders react to contradictory signals about the closure of the Strait of Hormuz and the durability of wartime supply disruptions. The global significance is straightforward: a sustained energy shock would feed imported inflation, strain fuel subsidies, and slow growth well beyond the Middle East.",
+            "conclusions": [
+              "The market is no longer reacting to headline risk alone; it is trying to price how much normal oil flow can actually resume.",
+              "For governments, the economic risk is secondary transmission through transport costs, consumer prices, and emergency fiscal measures."
+            ],
+            "link": "https://www.aljazeera.com/economy/2026/3/11/oil-prices-swing-wildly-amid-mixed-messages-over-iran-war",
+            "image": {
+              "src": "assets/images/placeholder-world.svg",
+              "alt": "Illustrated placeholder card for Al Jazeera coverage of oil-market volatility during the Iran war."
+            }
+          },
+          {
+            "displayTitle": "Extreme heat is now constraining daily life for a third of humanity, not just vulnerable edge cases",
+            "title": "‘A sobering preview’: extreme heat now affects one in three people globally, study finds",
+            "journal": "The Guardian",
+            "publishedAt": "2026-03-10",
+            "summary": "The Guardian reports on new research showing that severe heat now restricts normal physical activity for roughly one-third of the global population, with especially sharp impacts on older adults and lower-income regions. It matters as a world item because climate change is being measured here in direct human workability and liveability, not only temperature records.",
+            "conclusions": [
+              "The study reframes heat as a mass public-health and productivity constraint rather than a periodic weather anomaly.",
+              "Near-term adaptation investments are urgent, but the underlying signal remains that each additional increment of warming broadens human exposure quickly."
+            ],
+            "link": "https://www.theguardian.com/environment/2026/mar/10/extreme-heat-study-global-warming-physical-activity",
+            "image": {
+              "src": "assets/images/placeholder-world.svg",
+              "alt": "Illustrated placeholder card for The Guardian report on global exposure to extreme heat."
+            }
+          },
+          {
+            "displayTitle": "Planetary warming is accelerating fast enough to tighten the 1.5C timeline again",
+            "title": "Humanity heating planet faster than ever before, study finds",
+            "journal": "The Guardian",
+            "publishedAt": "2026-03-06",
+            "summary": "The Guardian highlights analysis suggesting human-driven warming has accelerated to roughly 0.35C per decade in the last ten years after filtering out major natural fluctuations. The broader importance is that the world may be burning through remaining temperature guardrails faster than many policy pathways still assume.",
+            "conclusions": [
+              "This is a climate-governance story as much as a science story because faster warming compresses the policy window for both mitigation and adaptation.",
+              "If the trend persists, discussions about threshold timing and tipping-risk exposure will become materially more urgent this decade."
+            ],
+            "link": "https://www.theguardian.com/environment/2026/mar/06/humanity-heating-planet-faster-than-ever-before-study-finds",
+            "image": {
+              "src": "assets/images/placeholder-world.svg",
+              "alt": "Illustrated placeholder card for The Guardian report on the acceleration of human-driven global warming."
+            }
+          }
+        ]
+      },
+      "articles": [
+        {
+          "displayTitle": "CCSD(T)-grade MLIPs make layered COF hydrogen uptake studies look simulation-ready",
+          "title": "Machine-Learning Interatomic Potentials Achieving CCSD(T) Accuracy for Systems with Extended Covalent Networks and van der Waals Interactions",
+          "journal": "Journal of Chemical Theory and Computation",
+          "quartile": "Q1",
+          "publishedAt": "2026-03-03",
+          "summary": "This JCTC paper uses delta-learning on top of a dispersion-aware tight-binding baseline to train machine-learned interatomic potentials that reach coupled-cluster accuracy for extended covalent networks with meaningful van der Waals interactions. Its practical value for computational materials groups is that quasi-2D COFs can now be studied with near-benchmark energetics for interlayer binding and hydrogen adsorption without collapsing back to tiny-cell quantum chemistry.",
+          "conclusions": [
+            "The main advance is methodological: chemically accurate MLIPs are shown to be workable even when extended covalent bonding and long-range dispersion both matter.",
+            "For porous and low-dimensional materials, that opens a more credible route to longer atomistic simulations of adsorption and structural response at near-reference accuracy."
+          ],
+          "link": "https://pubs.acs.org/doi/full/10.1021/acs.jctc.5c02045",
+          "image": {
+            "src": "assets/images/placeholder-materials.svg",
+            "alt": "Illustrated placeholder card for the JCTC study on CCSD(T)-accuracy machine-learned interatomic potentials for layered covalent organic frameworks."
+          }
+        },
+        {
+          "displayTitle": "Doped MoS2 gets a serious MLIP validation stack instead of a pristine-sheet shortcut",
+          "title": "Machine Learning Interatomic Potentials Enable Molecular Dynamics Simulations of Doped MoS2",
+          "journal": "Journal of Chemical Theory and Computation",
+          "quartile": "Q1",
+          "publishedAt": "2026-02-24",
+          "summary": "The study benchmarks a universal machine-learned interatomic potential against DFT for 25 dopants in MoS2 and then uses the model for heating-cooling molecular dynamics that reveal clustering, fracturing, interlayer diffusion, and compound formation. It is directly relevant to low-dimensional materials design because it moves doped-sheet simulation from static formation-energy checks toward larger, thermally activated structural evolution.",
+          "conclusions": [
+            "The useful contribution is not just another MLIP application but a detailed validation workflow for chemically diverse dopants in a technologically important 2D host.",
+            "For tribological, electronic, and optoelectronic MoS2 research, the paper shows how to scale screening beyond what routine DFT dynamics can handle."
+          ],
+          "link": "https://pubs.acs.org/doi/full/10.1021/acs.jctc.5c02004",
+          "image": {
+            "src": "assets/images/placeholder-materials.svg",
+            "alt": "Illustrated placeholder card for the JCTC paper on machine-learned interatomic potentials for doped MoS2 molecular dynamics."
+          }
+        },
+        {
+          "displayTitle": "Flexible MOF water uptake finally gets an MLIP route that stays close to experiment",
+          "title": "Machine Learning Interatomic Potentials for Modeling Framework Flexibility and Water Uptake in NbOFFIVE-1-Ni Metal–Organic Framework",
+          "journal": "The Journal of Physical Chemistry C",
+          "quartile": "Q1",
+          "publishedAt": "2026-02-09",
+          "summary": "This JPCC paper trains MLIPs on first-principles molecular dynamics data so the flexible MOF NbOFFIVE-1-Ni can be simulated on nanosecond time scales while preserving the framework response needed for realistic water adsorption predictions. The significance is that framework flexibility is folded back into GCMC-style adsorption analysis in a way that better matches experiment than rigid-framework approximations.",
+          "conclusions": [
+            "The paper directly addresses a persistent porous-materials problem: adsorption errors caused by treating a genuinely flexible framework as rigid.",
+            "For MOF screening and separations work, the combined MLIP-MD plus GCMC workflow is a practical template for incorporating flexibility without prohibitive ab initio cost."
+          ],
+          "link": "https://pubs.acs.org/doi/10.1021/acs.jpcc.6c00023",
+          "image": {
+            "src": "assets/images/placeholder-materials.svg",
+            "alt": "Illustrated placeholder card for the JPCC study on machine-learned interatomic potentials for framework flexibility and water uptake in NbOFFIVE-1-Ni."
+          }
+        },
+        {
+          "displayTitle": "Classical DFT looks fast enough to become a real multicomponent MOF screening engine",
+          "title": "Efficient Prediction of Multicomponent Adsorption Isotherms and Enthalpies of Adsorption in MOFs Using Classical Density Functional Theory",
+          "journal": "The Journal of Physical Chemistry B",
+          "publishedAt": "2026-02-05",
+          "summary": "The paper shows that a PC-SAFT-based classical density functional theory workflow can reproduce GCMC multicomponent adsorption isotherms and adsorption enthalpies for MOFs while running orders of magnitude faster on GPU hardware. For adsorption and separations research, the practical message is that realistic binary, ternary, and quaternary mixture screening may no longer need to rely on much slower Monte Carlo-only pipelines.",
+          "conclusions": [
+            "Speed matters here because the method is pitched as predictive rather than a fit-to-simulation shortcut, making it useful for high-throughput adsorbent screening.",
+            "The strongest immediate use case is porous-material design where multicomponent competition, not single-gas uptake, determines whether a framework is actually valuable."
+          ],
+          "link": "https://pubs.acs.org/doi/10.1021/acs.jpcb.5c08035",
+          "image": {
+            "src": "assets/images/placeholder-materials.svg",
+            "alt": "Illustrated placeholder card for the JPCB paper on GPU-accelerated classical DFT prediction of multicomponent adsorption in MOFs."
+          }
+        }
+      ]
+    },
     {
       "id": "2026-03-17-am",
       "title": "Morning Digest: Materials Feed (4) + Mixed Top 10",

@@ -101,15 +101,16 @@ function sortRunsDesc(runs) {
 }
 
 function normalizeHomeData(data, selectedRuns) {
+  const latestRunOnly = selectedRuns.slice(0, 1);
   const materials = [];
-  selectedRuns.forEach((run) => {
+  latestRunOnly.forEach((run) => {
     const selectedArticles = Array.isArray(run?.articles) ? run.articles : [];
     selectedArticles.forEach((article, idx) => {
       materials.push(toFeedItem(article, idx, "materials", run));
     });
   });
 
-  const selectedCategoryData = selectedRuns[0]?.categories || {
+  const selectedCategoryData = latestRunOnly[0]?.categories || {
     tech_science: [],
     world: [],
   };
@@ -142,7 +143,7 @@ function normalizeHomeData(data, selectedRuns) {
   }
 
   return {
-    selectedRuns,
+    selectedRuns: latestRunOnly,
     tabs: {
       for_you: forYou,
       materials,
