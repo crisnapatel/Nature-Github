@@ -150,12 +150,14 @@ function createFeedCard(item) {
 
 function renderFeedItems(items) {
   const cardsStream = document.getElementById("cards-stream");
-  const cardCount = document.getElementById("card-count");
-  if (!cardsStream || !cardCount) {
+  const feedCount = document.getElementById("feed-count");
+  if (!cardsStream) {
     return;
   }
 
-  cardCount.textContent = String(items.length);
+  if (feedCount) {
+    feedCount.textContent = `${items.length} items`;
+  }
   if (!items.length) {
     cardsStream.innerHTML = `
       <article class="empty-card">

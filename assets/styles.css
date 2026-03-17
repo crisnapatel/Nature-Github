@@ -363,12 +363,28 @@ main {
   margin-bottom: 0.8rem;
 }
 
+.discover-title-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
 .discover-title {
   margin: 0;
   color: #2a1f18;
   font-size: clamp(1.5rem, 6vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.03em;
+}
+
+.discover-inline-meta {
+  margin: 0;
+  color: #8c6a54;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
 }
 
 .discover-actions {
@@ -393,8 +409,8 @@ main {
 
 .quick-stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.55rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.45rem;
   margin-bottom: 0.85rem;
 }
 
@@ -422,14 +438,17 @@ main {
 }
 
 .run-date-picker {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   margin-top: 0.3rem;
   border: 1px solid rgba(120, 92, 69, 0.2);
   border-radius: 10px;
   background: #fffdf9;
   color: #2f231c;
   font: inherit;
-  font-size: 0.96rem;
+  font-size: 16px;
   font-weight: 600;
   padding: 0.5rem 0.6rem;
 }
@@ -442,14 +461,23 @@ main {
 
 .feed-tabs {
   display: flex;
-  gap: 0.4rem;
-  overflow-x: auto;
-  padding: 0.18rem 0.06rem;
-  scrollbar-width: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  padding: 0.12rem 0.06rem;
   margin-bottom: 0.9rem;
 }
 
-.feed-tabs::-webkit-scrollbar {
+.feed-tab-rail {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.08rem;
+  scrollbar-width: none;
+  flex: 1;
+}
+
+.feed-tab-rail::-webkit-scrollbar {
   display: none;
 }
 
@@ -469,6 +497,14 @@ main {
 .feed-tab.is-active {
   color: #b65c33;
   background: rgba(182, 92, 51, 0.14);
+}
+
+.feed-count {
+  margin: 0;
+  white-space: nowrap;
+  color: #8c6a54;
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 .cards-stream {
@@ -620,11 +656,17 @@ body[data-view="home"] {
     padding-top: 0.65rem;
   }
 
-  .quick-stats {
-    grid-template-columns: 1fr;
-  }
-
   .news-main {
     padding: 0.85rem 0.82rem 1rem;
+  }
+
+  .feed-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .feed-count {
+    align-self: flex-end;
+    margin-right: 0.1rem;
   }
 }

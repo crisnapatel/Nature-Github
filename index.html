@@ -19,7 +19,10 @@
   <body data-view="home">
     <div class="discover-shell">
       <header class="discover-header">
-        <p class="discover-title">Discover</p>
+        <div class="discover-title-wrap">
+          <p class="discover-title">Discover</p>
+          <p class="discover-inline-meta">Q1/Q2/Q3 journals</p>
+        </div>
       </header>
 
       <main>
@@ -29,21 +32,16 @@
             <input class="run-date-picker" id="run-date-picker" type="date" />
             <p class="stat-hint" id="run-date-hint">Select date to open that run</p>
           </div>
-          <div class="stat-card">
-            <p class="stat-label">Coverage</p>
-            <p class="stat-value">Q1/Q2/Q3 journals</p>
-          </div>
-          <div class="stat-card">
-            <p class="stat-label">Cards</p>
-            <p class="stat-value" id="card-count">0</p>
-          </div>
         </section>
 
         <section class="feed-tabs" id="feed-tabs" aria-label="News categories">
-          <button class="feed-tab is-active" data-tab="for_you" type="button">For You</button>
-          <button class="feed-tab" data-tab="materials" type="button">Materials</button>
-          <button class="feed-tab" data-tab="tech_science" type="button">Tech &amp; Science</button>
-          <button class="feed-tab" data-tab="world" type="button">World</button>
+          <div class="feed-tab-rail">
+            <button class="feed-tab is-active" data-tab="for_you" type="button">For You</button>
+            <button class="feed-tab" data-tab="materials" type="button">Materials</button>
+            <button class="feed-tab" data-tab="tech_science" type="button">Tech &amp; Science</button>
+            <button class="feed-tab" data-tab="world" type="button">World</button>
+          </div>
+          <p class="feed-count" id="feed-count">0 items</p>
         </section>
 
         <section class="cards-stream" id="cards-stream"></section>
